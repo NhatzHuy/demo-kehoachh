@@ -1,0 +1,1811 @@
+<!DOCTYPE html>
+
+<html class="dark" lang="en"><head><meta charset="utf-8"/><meta content="width=device-width, initial-scale=1.0" name="viewport"/><meta content="web_dashboard" name="shell-type"/><link href="https://fonts.googleapis.com" rel="preconnect"/><link crossorigin="" href="https://fonts.gstatic.com" rel="preconnect"/><link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=JetBrains+Mono:wght@400;500;600&family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@100..900&family=JetBrains+Mono:wght@100..900&display=swap" rel="stylesheet"/><style>@layer base{html,body{margin:0;padding:0;}body{overscroll-behavior:none;}main>:first-child{margin-top:0!important;}main>:last-child{margin-bottom:0!important;}}::-webkit-scrollbar{display:none;}</style><script src="https://cdn.tailwindcss.com"></script><script id="tailwind-config">tailwind.config={darkMode:"class",theme:{extend:{"colors":{"on-secondary-container":"#b0b2ff","on-surface-variant":"#bbcabf","tertiary-container":"#00b2d0","primary-container":"#10b981","outline":"#86948a","surface-tint":"#4edea3","on-primary-fixed":"#002113","tertiary-fixed":"#acedff","surface-container":"#191f31","on-surface":"#dce1fb","surface-variant":"#2e3447","inverse-on-surface":"#2a3043","on-primary-fixed-variant":"#005236","on-tertiary-fixed":"#001f26","surface-container-lowest":"#070d1f","inverse-primary":"#006c49","outline-variant":"#3c4a42","primary-fixed":"#6ffbbe","surface-container-high":"#23293c","secondary-container":"#3131c0","inverse-surface":"#dce1fb","tertiary-fixed-dim":"#4cd7f6","error-container":"#93000a","primary":"#4edea3","secondary-fixed-dim":"#c0c1ff","on-secondary-fixed-variant":"#2f2ebe","error":"#ffb4ab","surface-container-low":"#151b2d","on-tertiary-container":"#003f4b","background":"#0c1324","on-primary-container":"#00422b","on-primary":"#003824","surface-dim":"#0c1324","on-background":"#dce1fb","on-secondary":"#1000a9","on-error-container":"#ffdad6","tertiary":"#4cd7f6","surface-container-highest":"#2e3447","secondary-fixed":"#e1e0ff","on-error":"#690005","surface-bright":"#33394c","on-tertiary-fixed-variant":"#004e5c","secondary":"#c0c1ff","surface":"#0c1324","primary-fixed-dim":"#4edea3","on-secondary-fixed":"#07006c","on-tertiary":"#003640"},"borderRadius":{"DEFAULT":"0.125rem","lg":"0.25rem","xl":"0.5rem","full":"0.75rem"},"spacing":{"gutter-desktop":"1.5rem","space-sm":"0.5rem","space-lg":"1.5rem","space-xl":"2rem","space-md":"1rem","margin":"1rem","space-xs":"0.25rem","margin-tablet":"1.5rem","gutter":"1rem","margin-desktop":"2rem"},"fontFamily":{"headline-md":["Inter"],"body-sm":["Inter"],"label-code-lg":["JetBrains Mono"],"label-code-sm":["JetBrains Mono"],"body-lg":["Inter"],"label-code-md":["JetBrains Mono"],"headline-xl":["Inter"],"headline-lg-mobile":["Inter"],"headline-xl-mobile":["Inter"],"body-md":["Inter"],"headline-lg":["Inter"]},"fontSize":{"headline-md":["18px",{"lineHeight":"26px","letterSpacing":"-0.01em","fontWeight":"600"}],"body-sm":["12px",{"lineHeight":"18px","letterSpacing":"0.01em","fontWeight":"400"}],"label-code-lg":["14px",{"lineHeight":"20px","letterSpacing":"-0.01em","fontWeight":"500"}],"label-code-sm":["10px",{"lineHeight":"14px","letterSpacing":"0.04em","fontWeight":"600"}],"body-lg":["16px",{"lineHeight":"24px","letterSpacing":"0em","fontWeight":"400"}],"label-code-md":["12px",{"lineHeight":"16px","letterSpacing":"0em","fontWeight":"500"}],"headline-xl":["36px",{"lineHeight":"44px","letterSpacing":"-0.025em","fontWeight":"700"}],"headline-lg-mobile":["20px",{"lineHeight":"28px","letterSpacing":"-0.015em","fontWeight":"600"}],"headline-xl-mobile":["28px",{"lineHeight":"36px","letterSpacing":"-0.02em","fontWeight":"700"}],"body-md":["14px",{"lineHeight":"20px","letterSpacing":"0em","fontWeight":"400"}],"headline-lg":["24px",{"lineHeight":"32px","letterSpacing":"-0.02em","fontWeight":"600"}]}}}};</script></head><body class="bg-background font-body-md text-on-surface antialiased selection:bg-primary-container selection:text-on-primary-container min-h-screen"><aside class="fixed left-0 top-0 h-full w-64 bg-surface-container-lowest z-50 flex flex-col justify-between py-space-lg shadow-[0_1px_8px_rgba(0,0,0,0.3)]"><div class="flex flex-col gap-space-lg"><div class="flex items-center gap-space-sm px-space-lg"><div class="w-8 h-8 rounded-xl bg-primary flex items-center justify-center text-on-primary font-label-code-lg text-label-code-lg font-bold">>_</div><div class="flex flex-col"><span class="font-headline-md text-headline-md text-on-surface tracking-tight leading-none">DevStudy<span class="text-primary">.io</span></span><span class="font-label-code-sm text-label-code-sm text-on-surface-variant uppercase tracking-wider">v2.4 cs-core</span></div></div><div class="px-space-md"><div class="px-space-sm py-space-xs font-label-code-sm text-label-code-sm uppercase text-outline tracking-wider">Workspace</div><nav class="flex flex-col gap-space-xs mt-space-xs" data-active-classes="bg-surface-container-high text-primary font-bold shadow-[0_0_12px_-2px_rgba(78,222,163,0.15)]"><a aria-current="page" class="flex items-center gap-space-sm px-space-md py-space-sm rounded-xl transition-all bg-surface-container-high text-primary font-bold shadow-[0_0_12px_-2px_rgba(78,222,163,0.15)]" data-path="dashboard-overview" href="#"><span class="material-symbols-outlined text-[20px]">grid_view</span><span class="font-body-md text-body-md">Dashboard Overview</span></a><a class="flex items-center gap-space-sm px-space-md py-space-sm rounded-xl text-on-surface-variant hover:bg-surface-container-high hover:text-on-surface transition-all" data-path="courses-and-credits" href="#"><span class="material-symbols-outlined text-[20px]">account_tree</span><span class="font-body-md text-body-md">Courses & Credits</span></a><a class="flex items-center gap-space-sm px-space-md py-space-sm rounded-xl text-on-surface-variant hover:bg-surface-container-high hover:text-on-surface transition-all" data-path="weekly-timetable" href="#"><span class="material-symbols-outlined text-[20px]">calendar_month</span><span class="font-body-md text-body-md">Weekly Timetable</span></a><a class="flex items-center gap-space-sm px-space-md py-space-sm rounded-xl text-on-surface-variant hover:bg-surface-container-high hover:text-on-surface transition-all" data-path="task-tracker" href="#"><span class="material-symbols-outlined text-[20px]">terminal</span><span class="font-body-md text-body-md">Task Tracker</span></a><a class="flex items-center gap-space-sm px-space-md py-space-sm rounded-xl text-on-surface-variant hover:bg-surface-container-high hover:text-on-surface transition-all" data-path="code-snippets-vault" href="#"><span class="material-symbols-outlined text-[20px]">code_blocks</span><span class="font-body-md text-body-md">Code Snippets Vault</span></a></nav></div><div class="px-space-md"><div class="px-space-sm py-space-xs font-label-code-sm text-label-code-sm uppercase text-outline tracking-wider">System</div><nav class="flex flex-col gap-space-xs mt-space-xs" data-active-classes="bg-surface-container-high text-primary font-bold"><a class="flex items-center gap-space-sm px-space-md py-space-sm rounded-xl text-on-surface-variant hover:bg-surface-container-high hover:text-on-surface transition-all" data-path="storage-and-backup" href="#"><span class="material-symbols-outlined text-[20px]">database</span><span class="font-body-md text-body-md">Storage & Backup</span></a><a class="flex items-center gap-space-sm px-space-md py-space-sm rounded-xl text-on-surface-variant hover:bg-surface-container-high hover:text-on-surface transition-all" data-path="student-settings" href="#"><span class="material-symbols-outlined text-[20px]">tune</span><span class="font-body-md text-body-md">Settings</span></a></nav></div></div><div class="px-space-lg flex flex-col gap-space-sm"><div class="p-space-md rounded-xl bg-surface-container-low flex flex-col gap-space-xs"><div class="flex items-center justify-between font-label-code-sm text-label-code-sm"><span class="text-on-surface-variant">SPRINT COMMIT</span><span class="text-primary font-bold">84%</span></div><div class="w-full h-1.5 rounded-full bg-surface-container-high overflow-hidden"><div class="h-full bg-primary rounded-full w-[84%]"></div></div><div class="flex items-center justify-between font-label-code-sm text-label-code-sm text-on-surface-variant mt-space-xs"><span>16 / 19 Tasks</span><span class="text-tertiary">STREAK: 12d</span></div></div><div class="flex items-center justify-between text-on-surface-variant pt-space-xs"><div class="flex items-center gap-space-xs font-label-code-sm text-label-code-sm"><span class="w-2 h-2 rounded-full bg-primary animate-pulse"></span><span>SYNCED (LOCAL)</span></div><span class="material-symbols-outlined text-[16px] text-outline cursor-pointer hover:text-on-surface">sync</span></div></div></aside><div class="pl-64"><header class="fixed top-0 left-64 right-0 h-16 bg-surface-container-lowest/80 backdrop-blur-xl z-40 px-gutter-desktop flex items-center justify-between shadow-[0_1px_8px_rgba(0,0,0,0.25)]"><div class="flex items-center gap-space-lg"><div class="flex items-center gap-space-sm bg-surface-container px-space-md py-space-xs rounded-xl font-label-code-md text-label-code-md"><span class="w-2 h-2 rounded-full bg-tertiary shadow-[0_0_8px_currentColor]"></span><span class="text-tertiary font-bold">SPRINT FOCUS</span><span class="text-on-surface-variant">|</span><span class="text-on-surface font-bold">24:18</span><button class="hover:text-primary transition-colors flex items-center" type="button"><span class="material-symbols-outlined text-[18px]">play_arrow</span></button><button class="hover:text-tertiary transition-colors flex items-center" type="button"><span class="material-symbols-outlined text-[16px]">restart_alt</span></button></div><div class="hidden xl:flex items-center gap-space-sm font-label-code-sm text-label-code-sm text-on-surface-variant"><span class="material-symbols-outlined text-[16px] text-primary">schedule</span><span class="text-on-surface" id="sys-clock">UTC+7 14:32:09</span><span class="px-space-xs py-0.5 rounded bg-surface-container text-tertiary font-bold">TERM 2</span></div></div><div class="flex items-center gap-space-md"><div class="hidden md:flex items-center gap-space-xs bg-surface-container-low px-space-md py-space-xs rounded-xl text-on-surface-variant"><span class="material-symbols-outlined text-[18px] text-outline">terminal</span><span class="font-label-code-sm text-label-code-sm text-outline">> press</span><kbd class="px-1.5 py-0.5 bg-surface-container-highest rounded text-on-surface font-label-code-sm text-label-code-sm">⌘K</kbd><span class="font-label-code-sm text-label-code-sm text-outline">for cmd</span></div><button class="p-space-xs text-on-surface-variant hover:text-on-surface rounded-xl hover:bg-surface-container transition-colors relative" type="button"><span class="material-symbols-outlined text-[20px]">notifications</span><span class="absolute top-1.5 right-1.5 w-2 h-2 rounded-full bg-primary ring-2 ring-surface-container-lowest"></span></button><button class="p-space-xs text-on-surface-variant hover:text-on-surface rounded-xl hover:bg-surface-container transition-colors" type="button"><span class="material-symbols-outlined text-[20px]">code</span></button><div class="h-5 w-[1px] bg-surface-container-highest"></div><div class="flex items-center gap-space-sm pl-space-xs"><div class="flex flex-col text-right hidden sm:flex"><span class="font-body-sm text-body-sm font-semibold text-on-surface leading-tight">alex.dev</span><span class="font-label-code-sm text-label-code-sm text-primary leading-tight">CS Yr.3</span></div><div class="w-8 h-8 rounded-full bg-primary flex items-center justify-center ring-2 ring-primary/20"><span class="material-symbols-outlined text-on-primary text-[18px]">person</span></div></div></div></header><main class="relative pt-16 bg-background w-full min-h-screen px-gutter-desktop py-space-lg"><div class="flex flex-col w-full pb-16">
+<!-- Top Ambient Glow Gradient Background -->
+<div class="relative w-full overflow-hidden rounded-2xl bg-surface-container-low p-space-lg mb-space-lg shadow-xl border border-surface-container-high/40">
+<div class="absolute -right-16 -top-16 w-80 h-80 rounded-full bg-primary/10 blur-3xl pointer-events-none"></div>
+<div class="absolute right-1/3 -bottom-20 w-72 h-72 rounded-full bg-tertiary/10 blur-3xl pointer-events-none"></div>
+<div class="relative z-10 flex flex-col lg:flex-row lg:items-center justify-between gap-space-lg">
+<div class="flex flex-col gap-space-xs max-w-2xl">
+<div class="flex items-center gap-space-sm font-label-code-sm text-label-code-sm text-primary">
+<span class="inline-flex items-center gap-1.5 px-2 py-0.5 rounded-full bg-primary/10 border border-primary/25">
+<span class="w-1.5 h-1.5 rounded-full bg-primary animate-ping"></span>
+            SYS: ACTIVE DEV SESSION
+          </span>
+<span class="text-on-surface-variant font-label-code-sm">git branch: main</span>
+</div>
+<h1 class="font-headline-xl text-headline-xl text-on-surface font-extrabold tracking-tight">
+          Chào dev, hôm nay bạn có <span class="text-primary underline decoration-primary/40 decoration-wavy" id="banner-urgent-count">3 deadline</span> cần hoàn thành! 🚀
+        </h1>
+<p class="font-body-md text-body-md text-on-surface-variant">
+          Hệ thống theo dõi tiến độ tín chỉ, bài tập lab và kho snippet thuật toán chuyên dụng cho sinh viên CNTT.
+        </p>
+</div>
+<!-- Live Clock & Focus Status Pill -->
+<div class="flex flex-col sm:flex-row items-start sm:items-center gap-space-md">
+<div class="flex flex-col bg-surface-container-lowest/80 backdrop-blur-md px-space-md py-space-sm rounded-xl border border-surface-container-high shadow-inner">
+<span class="font-label-code-sm text-label-code-sm text-outline uppercase tracking-wider">Hệ thống thời gian thực</span>
+<div class="flex items-center gap-2 mt-0.5">
+<span class="material-symbols-outlined text-[18px] text-tertiary">alarm</span>
+<span class="font-label-code-lg text-label-code-lg text-on-surface font-bold" id="live-datetime-display">Thứ 3, 24/10/2024 · 00:00:00</span>
+</div>
+</div>
+<div class="flex items-center gap-2">
+<button class="flex items-center gap-space-xs bg-tertiary/15 hover:bg-tertiary/25 text-tertiary font-label-code-md text-label-code-md font-bold px-space-md py-space-sm rounded-xl border border-tertiary/30 transition-all duration-200 active:scale-95 shadow-sm" id="quick-pomodoro-btn">
+<span class="material-symbols-outlined text-[18px]">timer</span>
+<span>Bật Pomodoro</span>
+</button>
+<button class="flex items-center gap-space-xs bg-primary text-on-primary font-headline-md text-headline-md font-bold px-space-md py-space-sm rounded-xl shadow-lg shadow-primary/20 hover:bg-primary-fixed transition-all duration-200 active:scale-95" id="quick-add-task-btn">
+<span class="material-symbols-outlined text-[20px]">add_circle</span>
+<span class="text-sm">Thêm Task</span>
+</button>
+</div>
+</div>
+</div>
+<!-- 4 Stats Ribbon Cards -->
+<div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-space-md mt-space-lg pt-space-md border-t border-surface-container-high/60">
+<!-- Stat 1: Total Courses -->
+<div class="flex items-center gap-space-md bg-surface-container/60 hover:bg-surface-container transition-all duration-200 p-space-md rounded-xl border border-surface-container-highest/40">
+<div class="w-12 h-12 rounded-xl bg-tertiary/15 text-tertiary flex items-center justify-center shrink-0">
+<span class="material-symbols-outlined text-[24px]">account_tree</span>
+</div>
+<div class="flex flex-col min-w-0">
+<span class="font-label-code-sm text-label-code-sm text-outline uppercase tracking-wider">Tổng số môn học</span>
+<div class="flex items-baseline gap-1.5">
+<span class="font-headline-lg text-headline-lg text-on-surface font-bold" id="stat-total-courses">5</span>
+<span class="font-body-sm text-body-sm text-on-surface-variant">môn active</span>
+</div>
+</div>
+</div>
+<!-- Stat 2: Total Credits -->
+<div class="flex items-center gap-space-md bg-surface-container/60 hover:bg-surface-container transition-all duration-200 p-space-md rounded-xl border border-surface-container-highest/40">
+<div class="w-12 h-12 rounded-xl bg-secondary-container/40 text-secondary-fixed flex items-center justify-center shrink-0">
+<span class="material-symbols-outlined text-[24px]">school</span>
+</div>
+<div class="flex flex-col min-w-0">
+<span class="font-label-code-sm text-label-code-sm text-outline uppercase tracking-wider">Tổng số tín chỉ</span>
+<div class="flex items-baseline gap-1.5">
+<span class="font-headline-lg text-headline-lg text-secondary-fixed font-bold" id="stat-total-credits">18</span>
+<span class="font-body-sm text-body-sm text-on-surface-variant">Tín chỉ (Kỳ 2)</span>
+</div>
+</div>
+</div>
+<!-- Stat 3: Completed Tasks -->
+<div class="flex items-center gap-space-md bg-surface-container/60 hover:bg-surface-container transition-all duration-200 p-space-md rounded-xl border border-surface-container-highest/40">
+<div class="w-12 h-12 rounded-xl bg-primary/15 text-primary flex items-center justify-center shrink-0">
+<span class="material-symbols-outlined text-[24px]">task_alt</span>
+</div>
+<div class="flex flex-col min-w-0">
+<span class="font-label-code-sm text-label-code-sm text-outline uppercase tracking-wider">Task hoàn thành</span>
+<div class="flex items-baseline gap-1.5">
+<span class="font-headline-lg text-headline-lg text-primary font-bold" id="stat-completed-tasks">12 / 16</span>
+<span class="font-body-sm text-body-sm text-on-surface-variant">Lab & BT</span>
+</div>
+</div>
+</div>
+<!-- Stat 4: Overall Progress -->
+<div class="flex flex-col justify-center bg-surface-container/60 hover:bg-surface-container transition-all duration-200 p-space-md rounded-xl border border-surface-container-highest/40">
+<div class="flex items-center justify-between font-label-code-sm text-label-code-sm mb-1.5">
+<span class="text-outline uppercase tracking-wider">Tiến độ kỳ học</span>
+<span class="text-primary font-bold" id="stat-progress-percent">75%</span>
+</div>
+<div class="w-full h-2.5 rounded-full bg-surface-container-lowest overflow-hidden p-0.5">
+<div class="h-full rounded-full bg-gradient-to-r from-tertiary via-primary to-primary-fixed shadow-[0_0_12px_rgba(78,222,163,0.6)] transition-all duration-500 w-[75%]" id="stat-progress-bar"></div>
+</div>
+<span class="font-label-code-sm text-label-code-sm text-on-surface-variant mt-1.5 flex items-center gap-1">
+<span class="w-1.5 h-1.5 rounded-full bg-primary"></span> Tuần 08 / 16 tuần chính
+        </span>
+</div>
+</div>
+</div>
+<!-- Primary Tab Switcher Bar -->
+<div class="flex flex-wrap items-center justify-between gap-space-md mb-space-lg bg-surface-container-lowest p-1.5 rounded-xl border border-surface-container-high">
+<div class="flex flex-wrap items-center gap-1.5" role="tablist">
+<button class="nav-tab-btn active flex items-center gap-2 px-space-md py-space-sm rounded-lg font-headline-md text-body-md transition-all duration-200 bg-surface-container-high text-primary font-bold shadow-md" data-target="tab-overview">
+<span class="material-symbols-outlined text-[18px]">grid_view</span>
+<span>Tổng quan</span>
+</button>
+<button class="nav-tab-btn flex items-center gap-2 px-space-md py-space-sm rounded-lg font-headline-md text-body-md transition-all duration-200 text-on-surface-variant hover:text-on-surface hover:bg-surface-container" data-target="tab-courses">
+<span class="material-symbols-outlined text-[18px]">account_tree</span>
+<span>Môn học & Tín chỉ</span>
+</button>
+<button class="nav-tab-btn flex items-center gap-2 px-space-md py-space-sm rounded-lg font-headline-md text-body-md transition-all duration-200 text-on-surface-variant hover:text-on-surface hover:bg-surface-container" data-target="tab-timetable">
+<span class="material-symbols-outlined text-[18px]">calendar_month</span>
+<span>Thời khóa biểu tuần</span>
+</button>
+<button class="nav-tab-btn flex items-center gap-2 px-space-md py-space-sm rounded-lg font-headline-md text-body-md transition-all duration-200 text-on-surface-variant hover:text-on-surface hover:bg-surface-container" data-target="tab-tasks">
+<span class="material-symbols-outlined text-[18px]">terminal</span>
+<span>Bài tập & To-Do</span>
+<span class="px-1.5 py-0.2 rounded-full bg-error-container text-error text-[10px] font-label-code-sm font-bold" id="tab-todo-badge">4</span>
+</button>
+<button class="nav-tab-btn flex items-center gap-2 px-space-md py-space-sm rounded-lg font-headline-md text-body-md transition-all duration-200 text-on-surface-variant hover:text-on-surface hover:bg-surface-container" data-target="tab-vault">
+<span class="material-symbols-outlined text-[18px]">code_blocks</span>
+<span>Kho Snippet & Notes</span>
+</button>
+</div>
+<!-- Quick Tool Actions (Pomodoro Modal Trigger + Data Export/Import) -->
+<div class="flex items-center gap-2 px-2">
+<button class="p-2 rounded-lg bg-surface-container-low hover:bg-surface-container text-tertiary transition-all flex items-center justify-center border border-surface-container-high active:scale-95" id="open-pomodoro-modal-btn" title="Mở bảng Pomodoro">
+<span class="material-symbols-outlined text-[18px]">hourglass_top</span>
+</button>
+<button class="p-2 rounded-lg bg-surface-container-low hover:bg-surface-container text-on-surface-variant hover:text-primary transition-all flex items-center justify-center border border-surface-container-high active:scale-95" id="export-json-btn" title="Xuất dữ liệu JSON Backup">
+<span class="material-symbols-outlined text-[18px]">file_download</span>
+</button>
+<label class="p-2 rounded-lg bg-surface-container-low hover:bg-surface-container text-on-surface-variant hover:text-tertiary transition-all flex items-center justify-center border border-surface-container-high cursor-pointer active:scale-95" for="import-json-input" title="Nhập dữ liệu JSON">
+<span class="material-symbols-outlined text-[18px]">file_upload</span>
+</label>
+<input accept=".json" class="hidden" id="import-json-input" type="file"/>
+</div>
+</div>
+<!-- TAB PANES CONTAINER -->
+<div class="w-full" id="tab-content-area">
+<!-- ========================================== -->
+<!-- TAB 1: OVERVIEW DASHBOARD                 -->
+<!-- ========================================== -->
+<div class="tab-pane flex flex-col gap-space-lg" id="tab-overview">
+<div class="grid grid-cols-1 lg:grid-cols-12 gap-space-lg">
+<!-- Left: Today's Schedule & Urgent Tasks (Col 8) -->
+<div class="lg:col-span-8 flex flex-col gap-space-lg">
+<!-- Today Classes Box -->
+<div class="bg-surface-container-low rounded-xl p-space-md border border-surface-container-high shadow-md">
+<div class="flex items-center justify-between pb-space-sm border-b border-surface-container-high mb-space-md">
+<div class="flex items-center gap-2">
+<span class="material-symbols-outlined text-[20px] text-primary">calendar_today</span>
+<h2 class="font-headline-md text-headline-md text-on-surface">Lịch học hôm nay</h2>
+<span class="px-2 py-0.5 rounded-full bg-primary/10 text-primary font-label-code-sm text-label-code-sm font-semibold">LIVE</span>
+</div>
+<button class="font-label-code-sm text-label-code-sm text-tertiary hover:underline flex items-center gap-1" onclick="switchTab('tab-timetable')">
+                Xem toàn bộ TKB <span class="material-symbols-outlined text-[14px]">arrow_forward</span>
+</button>
+</div>
+<div class="flex flex-col gap-space-sm" id="today-classes-container">
+<!-- Dynamically populated or fallback -->
+</div>
+</div>
+<!-- Urgent Deadlines Box -->
+<div class="bg-surface-container-low rounded-xl p-space-md border border-surface-container-high shadow-md">
+<div class="flex items-center justify-between pb-space-sm border-b border-surface-container-high mb-space-md">
+<div class="flex items-center gap-2">
+<span class="material-symbols-outlined text-[20px] text-error">notification_important</span>
+<h2 class="font-headline-md text-headline-md text-on-surface">Cảnh báo deadline gấp</h2>
+<span class="px-2 py-0.5 rounded-full bg-error-container text-error font-label-code-sm text-label-code-sm font-semibold">CẦN XỬ LÝ</span>
+</div>
+<button class="font-label-code-sm text-label-code-sm text-primary hover:underline flex items-center gap-1" onclick="switchTab('tab-tasks')">
+                Xem to-do list <span class="material-symbols-outlined text-[14px]">arrow_forward</span>
+</button>
+</div>
+<div class="flex flex-col gap-space-sm" id="urgent-tasks-container">
+<!-- Urgent tasks render here -->
+</div>
+</div>
+<!-- Quick Code Scratchpad -->
+<div class="bg-surface-container-low rounded-xl p-space-md border border-surface-container-high shadow-md">
+<div class="flex items-center justify-between mb-space-sm">
+<div class="flex items-center gap-2">
+<span class="material-symbols-outlined text-[20px] text-tertiary">edit_note</span>
+<h3 class="font-headline-md text-headline-md text-on-surface">Scratchpad Ghi chú Nhanh (Auto-save)</h3>
+</div>
+<span class="font-label-code-sm text-label-code-sm text-outline" id="scratchpad-status">Đã đồng bộ</span>
+</div>
+<textarea class="w-full bg-surface-container-lowest text-on-surface font-label-code-md text-label-code-md p-space-md rounded-xl border border-surface-container-high focus:border-tertiary focus:outline-none transition-all resize-y" id="quick-scratchpad" placeholder="// Viết nháp ý tưởng, link repo, lệnh docker hoặc bug note ở đây...
+$ docker run -d -p 8080:8080 dev-container" rows="4"></textarea>
+</div>
+</div>
+<!-- Right: Mini Pomodoro & Fast Links (Col 4) -->
+<div class="lg:col-span-4 flex flex-col gap-space-lg">
+<!-- Integrated Pomodoro Widget -->
+<div class="bg-surface-container-low rounded-xl p-space-md border border-surface-container-high shadow-md flex flex-col items-center text-center relative overflow-hidden">
+<div class="absolute -top-12 -right-12 w-32 h-32 rounded-full bg-tertiary/10 blur-xl pointer-events-none"></div>
+<div class="w-full flex items-center justify-between pb-space-xs border-b border-surface-container-high mb-space-md">
+<span class="font-label-code-sm text-label-code-sm text-tertiary uppercase font-bold tracking-wider flex items-center gap-1">
+<span class="w-2 h-2 rounded-full bg-tertiary animate-ping"></span>
+                POMODORO SPRINT
+              </span>
+<span class="px-2 py-0.5 rounded bg-surface-container-high text-on-surface font-label-code-sm text-label-code-sm" id="pomodoro-mode-label">TIÊU ĐIỂM (25M)</span>
+</div>
+<!-- Big Digital Countdown -->
+<div class="relative my-space-sm py-4 px-6 rounded-2xl bg-surface-container-lowest/90 border border-surface-container-high w-full flex flex-col items-center justify-center">
+<div class="font-label-code-lg text-[44px] leading-tight text-on-surface font-black tracking-tight text-glow" id="pomodoro-timer-display">
+                25:00
+              </div>
+<div class="flex items-center gap-1.5 mt-2">
+<span class="w-2 h-2 rounded-full bg-primary"></span>
+<span class="w-2 h-2 rounded-full bg-surface-container-highest"></span>
+<span class="w-2 h-2 rounded-full bg-surface-container-highest"></span>
+<span class="w-2 h-2 rounded-full bg-surface-container-highest"></span>
+<span class="font-label-code-sm text-label-code-sm text-outline ml-1">Chu kỳ 1/4</span>
+</div>
+</div>
+<!-- Controls -->
+<div class="grid grid-cols-3 gap-2 w-full mt-space-sm">
+<button class="col-span-2 py-2.5 rounded-lg bg-primary text-on-primary font-headline-md text-body-md font-bold hover:bg-primary-fixed transition-all flex items-center justify-center gap-1.5 shadow-md active:scale-95" id="pomo-toggle-btn">
+<span class="material-symbols-outlined text-[18px]">play_arrow</span>
+<span id="pomo-toggle-text">Bắt đầu Focus</span>
+</button>
+<button class="py-2.5 rounded-lg bg-surface-container hover:bg-surface-container-high text-on-surface-variant hover:text-on-surface transition-all flex items-center justify-center border border-surface-container-high active:scale-95" id="pomo-reset-btn" title="Reset">
+<span class="material-symbols-outlined text-[18px]">restart_alt</span>
+</button>
+</div>
+<div class="flex items-center justify-between w-full mt-space-md pt-space-xs border-t border-surface-container-high font-label-code-sm text-label-code-sm">
+<button class="text-tertiary hover:underline" id="pomo-set-focus">25m Học</button>
+<span class="text-outline">|</span>
+<button class="text-on-surface-variant hover:text-on-surface" id="pomo-set-short-break">5m Nghỉ ngắn</button>
+<span class="text-outline">|</span>
+<button class="text-on-surface-variant hover:text-on-surface" id="pomo-set-long-break">15m Nghỉ dài</button>
+</div>
+</div>
+<!-- Academic Resources Fast Links -->
+<div class="bg-surface-container-low rounded-xl p-space-md border border-surface-container-high shadow-md">
+<h3 class="font-headline-md text-headline-md text-on-surface mb-space-sm flex items-center gap-2">
+<span class="material-symbols-outlined text-[20px] text-primary">link</span>
+              Cổng học tập & Dev Portal
+            </h3>
+<div class="flex flex-col gap-2">
+<a class="flex items-center justify-between p-2.5 rounded-lg bg-surface-container hover:bg-surface-container-high transition-all text-on-surface font-body-md text-body-sm group" href="https://github.com" rel="noopener noreferrer" target="_blank">
+<div class="flex items-center gap-2">
+<span class="material-symbols-outlined text-[18px] text-outline group-hover:text-primary transition-colors">folder_code</span>
+<span>GitHub Student Campus</span>
+</div>
+<span class="material-symbols-outlined text-[16px] text-outline">open_in_new</span>
+</a>
+<a class="flex items-center justify-between p-2.5 rounded-lg bg-surface-container hover:bg-surface-container-high transition-all text-on-surface font-body-md text-body-sm group" href="https://leetcode.com" rel="noopener noreferrer" target="_blank">
+<div class="flex items-center gap-2">
+<span class="material-symbols-outlined text-[18px] text-outline group-hover:text-tertiary transition-colors">code</span>
+<span>LeetCode Problem Solving</span>
+</div>
+<span class="material-symbols-outlined text-[16px] text-outline">open_in_new</span>
+</a>
+<a class="flex items-center justify-between p-2.5 rounded-lg bg-surface-container hover:bg-surface-container-high transition-all text-on-surface font-body-md text-body-sm group" href="https://developer.mozilla.org" rel="noopener noreferrer" target="_blank">
+<div class="flex items-center gap-2">
+<span class="material-symbols-outlined text-[18px] text-outline group-hover:text-secondary transition-colors">menu_book</span>
+<span>MDN Web Docs Documentation</span>
+</div>
+<span class="material-symbols-outlined text-[16px] text-outline">open_in_new</span>
+</a>
+</div>
+</div>
+<!-- Quick Tip Card -->
+<div class="bg-gradient-to-br from-surface-container to-surface-container-low p-space-md rounded-xl border border-primary/20 relative">
+<div class="flex items-start gap-3">
+<span class="material-symbols-outlined text-[24px] text-primary shrink-0">tips_and_updates</span>
+<div class="flex flex-col">
+<span class="font-headline-md text-headline-md text-on-surface">Tips ôn thi CNTT</span>
+<p class="font-body-sm text-body-sm text-on-surface-variant mt-1">
+                  Hãy vẽ sơ đồ cây (AST) và chạy trace-table từng bước bằng tay với môn Cấu trúc Dữ liệu trước khi code testcase lớn.
+                </p>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+<!-- ========================================== -->
+<!-- TAB 2: COURSE & CREDITS MANAGER           -->
+<!-- ========================================== -->
+<div class="tab-pane hidden flex-col gap-space-lg" id="tab-courses">
+<div class="flex flex-col sm:flex-row sm:items-center justify-between gap-space-md bg-surface-container-low p-space-md rounded-xl border border-surface-container-high">
+<div class="flex flex-col">
+<h2 class="font-headline-lg text-headline-lg text-on-surface font-bold">Môn học & Quản lý Tín chỉ CNTT</h2>
+<p class="font-body-sm text-body-sm text-on-surface-variant">Quản lý lộ trình học tập, thông tin giảng viên, phòng lab và tình trạng hoàn thành môn.</p>
+</div>
+<div class="flex items-center gap-2">
+<button class="flex items-center gap-1.5 px-space-md py-2.5 bg-primary hover:bg-primary-fixed text-on-primary font-headline-md text-body-md font-bold rounded-lg shadow-md transition-all active:scale-95" id="add-course-btn">
+<span class="material-symbols-outlined text-[20px]">add</span>
+<span>Thêm Môn học mới</span>
+</button>
+</div>
+</div>
+<!-- Course Cards Grid -->
+<div class="grid grid-cols-1 md:grid-cols-2 xl:grid-cols-3 gap-space-md" id="courses-grid">
+<!-- Courses will be rendered here dynamically -->
+</div>
+</div>
+<!-- ========================================== -->
+<!-- TAB 3: WEEKLY TIMETABLE GRID               -->
+<!-- ========================================== -->
+<div class="tab-pane hidden flex-col gap-space-lg" id="tab-timetable">
+<div class="flex flex-col sm:flex-row sm:items-center justify-between gap-space-md bg-surface-container-low p-space-md rounded-xl border border-surface-container-high">
+<div class="flex flex-col">
+<h2 class="font-headline-lg text-headline-lg text-on-surface font-bold">Thời khóa biểu tuần (Weekly Timetable)</h2>
+<p class="font-body-sm text-body-sm text-on-surface-variant">Lưới theo dõi các ca học Sáng, Chiều và Tối từ Thứ 2 đến Chủ nhật.</p>
+</div>
+<div class="flex items-center gap-3 font-label-code-sm text-label-code-sm">
+<span class="flex items-center gap-1.5"><span class="w-3 h-3 rounded bg-primary/30 border border-primary"></span> Lý thuyết</span>
+<span class="flex items-center gap-1.5"><span class="w-3 h-3 rounded bg-tertiary/30 border border-tertiary"></span> Thực hành Lab</span>
+<span class="flex items-center gap-1.5"><span class="w-3 h-3 rounded bg-secondary-container/50 border border-secondary"></span> Đồ án</span>
+</div>
+</div>
+<!-- Schedule Table Canvas -->
+<div class="w-full overflow-x-auto bg-surface-container-low rounded-xl border border-surface-container-high shadow-lg">
+<table class="w-full text-left border-collapse min-w-[760px]">
+<thead>
+<tr class="bg-surface-container-lowest border-b border-surface-container-high font-label-code-sm text-label-code-sm text-on-surface-variant">
+<th class="p-3 w-28 text-center uppercase tracking-wider">Ca / Giờ</th>
+<th class="p-3 text-center uppercase tracking-wider">Thứ 2 (Mon)</th>
+<th class="p-3 text-center uppercase tracking-wider">Thứ 3 (Tue)</th>
+<th class="p-3 text-center uppercase tracking-wider">Thứ 4 (Wed)</th>
+<th class="p-3 text-center uppercase tracking-wider">Thứ 5 (Thu)</th>
+<th class="p-3 text-center uppercase tracking-wider">Thứ 6 (Fri)</th>
+<th class="p-3 text-center uppercase tracking-wider">Thứ 7 (Sat)</th>
+<th class="p-3 text-center uppercase tracking-wider">Chủ nhật (Sun)</th>
+</tr>
+</thead>
+<tbody class="font-body-sm text-body-sm" id="timetable-body">
+<!-- Rendered by JS -->
+</tbody>
+</table>
+</div>
+</div>
+<!-- ========================================== -->
+<!-- TAB 4: TASK & ASSIGNMENT TRACKER           -->
+<!-- ========================================== -->
+<div class="tab-pane hidden flex-col gap-space-lg" id="tab-tasks">
+<div class="flex flex-col lg:flex-row lg:items-center justify-between gap-space-md bg-surface-container-low p-space-md rounded-xl border border-surface-container-high">
+<div class="flex flex-col">
+<h2 class="font-headline-lg text-headline-lg text-on-surface font-bold">Quản lý Bài tập, Lab & Dự án</h2>
+<p class="font-body-sm text-body-sm text-on-surface-variant">Lọc theo tiến độ, phân chia độ ưu tiên và theo dõi hạn chót nộp bài.</p>
+</div>
+<div class="flex flex-wrap items-center gap-2">
+<!-- Filter Buttons -->
+<div class="flex items-center bg-surface-container-lowest p-1 rounded-lg border border-surface-container-high text-xs">
+<button class="task-filter-btn active px-3 py-1.5 rounded-md text-primary font-bold bg-surface-container-high transition-all" data-filter="all">Tất cả</button>
+<button class="task-filter-btn px-3 py-1.5 rounded-md text-on-surface-variant hover:text-on-surface transition-all" data-filter="todo">Cần làm</button>
+<button class="task-filter-btn px-3 py-1.5 rounded-md text-on-surface-variant hover:text-on-surface transition-all" data-filter="in_progress">Đang làm</button>
+<button class="task-filter-btn px-3 py-1.5 rounded-md text-on-surface-variant hover:text-on-surface transition-all" data-filter="done">Hoàn thành</button>
+</div>
+<button class="flex items-center gap-1.5 px-space-md py-2 bg-primary hover:bg-primary-fixed text-on-primary font-headline-md text-body-md font-bold rounded-lg shadow transition-all active:scale-95" id="add-task-modal-trigger">
+<span class="material-symbols-outlined text-[18px]">add_task</span>
+<span>Tạo Task</span>
+</button>
+</div>
+</div>
+<!-- Task List Container -->
+<div class="grid grid-cols-1 gap-space-sm" id="tasks-container">
+<!-- Rendered by JS -->
+</div>
+</div>
+<!-- ========================================== -->
+<!-- TAB 5: CODE SNIPPET / NOTES VAULT          -->
+<!-- ========================================== -->
+<div class="tab-pane hidden flex-col gap-space-lg" id="tab-vault">
+<div class="flex flex-col sm:flex-row sm:items-center justify-between gap-space-md bg-surface-container-low p-space-md rounded-xl border border-surface-container-high">
+<div class="flex flex-col">
+<h2 class="font-headline-lg text-headline-lg text-on-surface font-bold">Kho Code Snippets & Mẫu Thuật toán IT</h2>
+<p class="font-body-sm text-body-sm text-on-surface-variant">Lưu trữ các mẫu code thông dụng, cấu hình server, truy vấn SQL và hàm cheat-sheet cho kỳ thi.</p>
+</div>
+<button class="flex items-center gap-1.5 px-space-md py-2.5 bg-tertiary hover:bg-tertiary-fixed text-on-tertiary font-headline-md text-body-md font-bold rounded-lg shadow transition-all active:scale-95" id="add-snippet-btn">
+<span class="material-symbols-outlined text-[20px]">keyboard_arrow_left</span>
+<span>Thêm Snippet Mới</span>
+</button>
+</div>
+<!-- Search & Language Filter -->
+<div class="flex flex-col sm:flex-row items-center gap-space-md">
+<div class="relative w-full sm:flex-1">
+<span class="material-symbols-outlined absolute left-3 top-1/2 -translate-y-1/2 text-[20px] text-outline">search</span>
+<input class="w-full pl-10 pr-4 py-2.5 bg-surface-container-low text-on-surface rounded-xl border border-surface-container-high focus:border-primary focus:outline-none font-body-md text-body-md" id="snippet-search-input" placeholder="Tìm kiếm theo tiêu đề, ghi chú hoặc ngôn ngữ (vd: C++, Docker, JWT)..." type="text"/>
+</div>
+<div class="flex items-center gap-1 overflow-x-auto w-full sm:w-auto pb-1 sm:pb-0" id="snippet-lang-filters">
+<button class="snippet-lang-tag active px-3 py-1.5 rounded-lg bg-surface-container-high text-primary font-label-code-sm text-label-code-sm font-bold" data-lang="all">TẤT CẢ</button>
+<button class="snippet-lang-tag px-3 py-1.5 rounded-lg bg-surface-container-low hover:bg-surface-container text-on-surface-variant font-label-code-sm text-label-code-sm" data-lang="cpp">C++</button>
+<button class="snippet-lang-tag px-3 py-1.5 rounded-lg bg-surface-container-low hover:bg-surface-container text-on-surface-variant font-label-code-sm text-label-code-sm" data-lang="nodejs">Node.js</button>
+<button class="snippet-lang-tag px-3 py-1.5 rounded-lg bg-surface-container-low hover:bg-surface-container text-on-surface-variant font-label-code-sm text-label-code-sm" data-lang="sql">SQL</button>
+<button class="snippet-lang-tag px-3 py-1.5 rounded-lg bg-surface-container-low hover:bg-surface-container text-on-surface-variant font-label-code-sm text-label-code-sm" data-lang="docker">Docker</button>
+<button class="snippet-lang-tag px-3 py-1.5 rounded-lg bg-surface-container-low hover:bg-surface-container text-on-surface-variant font-label-code-sm text-label-code-sm" data-lang="css">CSS</button>
+</div>
+</div>
+<!-- Snippets Display Grid -->
+<div class="grid grid-cols-1 xl:grid-cols-2 gap-space-lg" id="snippets-grid">
+<!-- Rendered by JS -->
+</div>
+</div>
+</div>
+<!-- ======================================================== -->
+<!-- MODAL: ADD / EDIT COURSE                                 -->
+<!-- ======================================================== -->
+<div class="fixed inset-0 z-50 hidden items-center justify-center bg-surface-container-lowest/80 backdrop-blur-md p-4 overflow-y-auto" id="course-modal">
+<div class="relative w-full max-w-xl bg-surface-container-low rounded-2xl border border-surface-container-high shadow-2xl p-space-lg">
+<div class="flex items-center justify-between pb-space-sm border-b border-surface-container-high mb-space-md">
+<h3 class="font-headline-lg text-headline-lg text-on-surface font-bold flex items-center gap-2">
+<span class="material-symbols-outlined text-primary text-[24px]">school</span>
+          Thêm Môn học Mới
+        </h3>
+<button class="text-outline hover:text-on-surface" onclick="closeModal('course-modal')">
+<span class="material-symbols-outlined text-[24px]">close</span>
+</button>
+</div>
+<form class="flex flex-col gap-space-md" id="course-form">
+<div class="grid grid-cols-1 sm:grid-cols-2 gap-space-md">
+<div class="flex flex-col gap-1">
+<label class="font-label-code-sm text-label-code-sm text-on-surface-variant uppercase">Mã Môn Học *</label>
+<input class="p-2.5 bg-surface-container-lowest rounded-lg border border-surface-container-high text-on-surface font-label-code-md text-label-code-md focus:border-primary focus:outline-none" id="course-code-input" placeholder="VD: INT301, CS202" required="" type="text"/>
+</div>
+<div class="flex flex-col gap-1">
+<label class="font-label-code-sm text-label-code-sm text-on-surface-variant uppercase">Số Tín Chỉ *</label>
+<input class="p-2.5 bg-surface-container-lowest rounded-lg border border-surface-container-high text-on-surface font-label-code-md text-label-code-md focus:border-primary focus:outline-none" id="course-credits-input" max="10" min="1" required="" type="number" value="3"/>
+</div>
+</div>
+<div class="flex flex-col gap-1">
+<label class="font-label-code-sm text-label-code-sm text-on-surface-variant uppercase">Tên Môn Học *</label>
+<input class="p-2.5 bg-surface-container-lowest rounded-lg border border-surface-container-high text-on-surface font-body-md text-body-md focus:border-primary focus:outline-none" id="course-name-input" placeholder="VD: Cấu trúc Dữ liệu & Giải thuật" required="" type="text"/>
+</div>
+<div class="grid grid-cols-1 sm:grid-cols-2 gap-space-md">
+<div class="flex flex-col gap-1">
+<label class="font-label-code-sm text-label-code-sm text-on-surface-variant uppercase">Giảng Viên</label>
+<input class="p-2.5 bg-surface-container-lowest rounded-lg border border-surface-container-high text-on-surface font-body-md text-body-md focus:border-primary focus:outline-none" id="course-instructor-input" placeholder="VD: TS. Nguyễn Văn A" type="text"/>
+</div>
+<div class="flex flex-col gap-1">
+<label class="font-label-code-sm text-label-code-sm text-on-surface-variant uppercase">Phòng Học / Meet</label>
+<input class="p-2.5 bg-surface-container-lowest rounded-lg border border-surface-container-high text-on-surface font-body-md text-body-md focus:border-primary focus:outline-none" id="course-room-input" placeholder="VD: Lab 402 - Nhà C / Google Meet" type="text"/>
+</div>
+</div>
+<div class="grid grid-cols-1 sm:grid-cols-2 gap-space-md">
+<div class="flex flex-col gap-1">
+<label class="font-label-code-sm text-label-code-sm text-on-surface-variant uppercase">Thứ Trong Tuần</label>
+<select class="p-2.5 bg-surface-container-lowest rounded-lg border border-surface-container-high text-on-surface font-body-md text-body-md focus:border-primary focus:outline-none" id="course-day-input">
+<option value="2">Thứ Hai</option>
+<option value="3">Thứ Ba</option>
+<option value="4">Thứ Tư</option>
+<option value="5">Thứ Năm</option>
+<option value="6">Thứ Sáu</option>
+<option value="7">Thứ Bảy</option>
+<option value="8">Chủ Nhật</option>
+</select>
+</div>
+<div class="flex flex-col gap-1">
+<label class="font-label-code-sm text-label-code-sm text-on-surface-variant uppercase">Ca Học</label>
+<select class="p-2.5 bg-surface-container-lowest rounded-lg border border-surface-container-high text-on-surface font-body-md text-body-md focus:border-primary focus:outline-none" id="course-session-input">
+<option value="morning">Sáng (07:30 - 11:30)</option>
+<option value="afternoon">Chiều (13:00 - 17:00)</option>
+<option value="evening">Tối (17:30 - 20:45)</option>
+</select>
+</div>
+</div>
+<div class="flex items-center justify-end gap-space-sm pt-space-md border-t border-surface-container-high">
+<button class="px-space-md py-2 rounded-lg bg-surface-container text-on-surface-variant hover:text-on-surface transition-all" onclick="closeModal('course-modal')" type="button">Hủy</button>
+<button class="px-space-md py-2 rounded-lg bg-primary text-on-primary font-bold hover:bg-primary-fixed transition-all shadow-md" type="submit">Lưu Môn Học</button>
+</div>
+</form>
+</div>
+</div>
+<!-- ======================================================== -->
+<!-- MODAL: ADD / EDIT TASK                                   -->
+<!-- ======================================================== -->
+<div class="fixed inset-0 z-50 hidden items-center justify-center bg-surface-container-lowest/80 backdrop-blur-md p-4 overflow-y-auto" id="task-modal">
+<div class="relative w-full max-w-lg bg-surface-container-low rounded-2xl border border-surface-container-high shadow-2xl p-space-lg">
+<div class="flex items-center justify-between pb-space-sm border-b border-surface-container-high mb-space-md">
+<h3 class="font-headline-lg text-headline-lg text-on-surface font-bold flex items-center gap-2">
+<span class="material-symbols-outlined text-primary text-[24px]">playlist_add_check</span>
+          Tạo Task / Deadline Mới
+        </h3>
+<button class="text-outline hover:text-on-surface" onclick="closeModal('task-modal')">
+<span class="material-symbols-outlined text-[24px]">close</span>
+</button>
+</div>
+<form class="flex flex-col gap-space-md" id="task-form">
+<div class="flex flex-col gap-1">
+<label class="font-label-code-sm text-label-code-sm text-on-surface-variant uppercase">Tên Nhiệm Vụ / Bài Tập *</label>
+<input class="p-2.5 bg-surface-container-lowest rounded-lg border border-surface-container-high text-on-surface font-body-md text-body-md focus:border-primary focus:outline-none" id="task-title-input" placeholder="VD: Nộp Báo cáo Lab 3 Socket Programming" required="" type="text"/>
+</div>
+<div class="grid grid-cols-1 sm:grid-cols-2 gap-space-md">
+<div class="flex flex-col gap-1">
+<label class="font-label-code-sm text-label-code-sm text-on-surface-variant uppercase">Môn Học Liên Quan</label>
+<select class="p-2.5 bg-surface-container-lowest rounded-lg border border-surface-container-high text-on-surface font-body-md text-body-md focus:border-primary focus:outline-none" id="task-course-input">
+<!-- Dynamically populated options -->
+</select>
+</div>
+<div class="flex flex-col gap-1">
+<label class="font-label-code-sm text-label-code-sm text-on-surface-variant uppercase">Mức Độ Ưu Tiên</label>
+<select class="p-2.5 bg-surface-container-lowest rounded-lg border border-surface-container-high text-on-surface font-body-md text-body-md focus:border-primary focus:outline-none" id="task-priority-input">
+<option value="high">Cao (High - Deadline gấp)</option>
+<option selected="" value="medium">Trung bình (Medium)</option>
+<option value="low">Thấp (Low)</option>
+</select>
+</div>
+</div>
+<div class="grid grid-cols-1 sm:grid-cols-2 gap-space-md">
+<div class="flex flex-col gap-1">
+<label class="font-label-code-sm text-label-code-sm text-on-surface-variant uppercase">Hạn Chót (Deadline) *</label>
+<input class="p-2.5 bg-surface-container-lowest rounded-lg border border-surface-container-high text-on-surface font-label-code-md text-label-code-md focus:border-primary focus:outline-none" id="task-deadline-input" required="" type="datetime-local"/>
+</div>
+<div class="flex flex-col gap-1">
+<label class="font-label-code-sm text-label-code-sm text-on-surface-variant uppercase">Trạng Thái Ban Đầu</label>
+<select class="p-2.5 bg-surface-container-lowest rounded-lg border border-surface-container-high text-on-surface font-body-md text-body-md focus:border-primary focus:outline-none" id="task-status-input">
+<option value="todo">Cần Làm (To Do)</option>
+<option value="in_progress">Đang Làm (In Progress)</option>
+<option value="done">Hoàn Thành (Done)</option>
+</select>
+</div>
+</div>
+<div class="flex items-center justify-end gap-space-sm pt-space-md border-t border-surface-container-high">
+<button class="px-space-md py-2 rounded-lg bg-surface-container text-on-surface-variant hover:text-on-surface transition-all" onclick="closeModal('task-modal')" type="button">Đóng</button>
+<button class="px-space-md py-2 rounded-lg bg-primary text-on-primary font-bold hover:bg-primary-fixed transition-all shadow-md" type="submit">Thêm Nhiệm Vụ</button>
+</div>
+</form>
+</div>
+</div>
+<!-- ======================================================== -->
+<!-- MODAL: ADD CODE SNIPPET                                  -->
+<!-- ======================================================== -->
+<div class="fixed inset-0 z-50 hidden items-center justify-center bg-surface-container-lowest/80 backdrop-blur-md p-4 overflow-y-auto" id="snippet-modal">
+<div class="relative w-full max-w-2xl bg-surface-container-low rounded-2xl border border-surface-container-high shadow-2xl p-space-lg">
+<div class="flex items-center justify-between pb-space-sm border-b border-surface-container-high mb-space-md">
+<h3 class="font-headline-lg text-headline-lg text-on-surface font-bold flex items-center gap-2">
+<span class="material-symbols-outlined text-tertiary text-[24px]">terminal</span>
+          Lưu Đoạn Code / Thuật Toán Mới
+        </h3>
+<button class="text-outline hover:text-on-surface" onclick="closeModal('snippet-modal')">
+<span class="material-symbols-outlined text-[24px]">close</span>
+</button>
+</div>
+<form class="flex flex-col gap-space-md" id="snippet-form">
+<div class="grid grid-cols-1 sm:grid-cols-3 gap-space-md">
+<div class="sm:col-span-2 flex flex-col gap-1">
+<label class="font-label-code-sm text-label-code-sm text-on-surface-variant uppercase">Tiêu Đề Đoạn Mã *</label>
+<input class="p-2.5 bg-surface-container-lowest rounded-lg border border-surface-container-high text-on-surface font-body-md text-body-md focus:border-tertiary focus:outline-none" id="snippet-title-input" placeholder="VD: Dijkstra Shortest Path in C++" required="" type="text"/>
+</div>
+<div class="flex flex-col gap-1">
+<label class="font-label-code-sm text-label-code-sm text-on-surface-variant uppercase">Ngôn Ngữ</label>
+<select class="p-2.5 bg-surface-container-lowest rounded-lg border border-surface-container-high text-on-surface font-label-code-md text-label-code-md focus:border-tertiary focus:outline-none" id="snippet-lang-input">
+<option value="cpp">C / C++</option>
+<option value="nodejs">JavaScript / Node</option>
+<option value="sql">SQL Query</option>
+<option value="docker">Docker / YAML</option>
+<option value="css">CSS / Tailwind</option>
+<option value="python">Python</option>
+<option value="bash">Bash / Shell</option>
+</select>
+</div>
+</div>
+<div class="flex flex-col gap-1">
+<label class="font-label-code-sm text-label-code-sm text-on-surface-variant uppercase">Ghi Chú Hoặc Giải Thích Ngắn</label>
+<input class="p-2.5 bg-surface-container-lowest rounded-lg border border-surface-container-high text-on-surface font-body-md text-body-md focus:border-tertiary focus:outline-none" id="snippet-desc-input" placeholder="VD: Độ phức tạp O(E log V), dùng min-heap priority_queue" type="text"/>
+</div>
+<div class="flex flex-col gap-1">
+<label class="font-label-code-sm text-label-code-sm text-on-surface-variant uppercase">Khối Mã Code (Code Block) *</label>
+<textarea class="w-full bg-surface-container-lowest text-on-surface font-label-code-sm text-label-code-sm p-space-md rounded-xl border border-surface-container-high focus:border-tertiary focus:outline-none transition-all resize-y font-mono" id="snippet-code-input" placeholder="// Dán source code vào đây..." required="" rows="8"></textarea>
+</div>
+<div class="flex items-center justify-end gap-space-sm pt-space-md border-t border-surface-container-high">
+<button class="px-space-md py-2 rounded-lg bg-surface-container text-on-surface-variant hover:text-on-surface transition-all" onclick="closeModal('snippet-modal')" type="button">Hủy</button>
+<button class="px-space-md py-2 rounded-lg bg-tertiary text-on-tertiary font-bold hover:bg-tertiary-fixed transition-all shadow-md" type="submit">Lưu Vào Kho Code</button>
+</div>
+</form>
+</div>
+</div>
+<!-- TOAST NOTIFICATION CONTAINER -->
+<div class="fixed bottom-6 right-6 z-50 flex flex-col gap-2 pointer-events-none" id="toast-container"></div>
+</div>
+<script>
+/**
+ * DEVSTUDY.IO - CORE SPA CONTROLLER & STORAGE ENGINE
+ */
+(function() {
+  // --- DEFAULT INITIAL SEED DATA ---
+  const INITIAL_COURSES = [
+    {
+      id: "crs-1",
+      code: "INT2204",
+      name: "Cấu trúc Dữ liệu & Giải thuật",
+      credits: 4,
+      instructor: "TS. Trần Quang Hưng",
+      room: "Phòng Lab 302-G2",
+      day: 2, // Monday
+      session: "morning",
+      status: "active",
+      colorTag: "border-primary"
+    },
+    {
+      id: "crs-2",
+      code: "INT2209",
+      name: "Mạng máy tính & Truyền thông",
+      credits: 3,
+      instructor: "ThS. Lê Minh Đức",
+      room: "Giảng đường 205-E3",
+      day: 3, // Tuesday
+      session: "afternoon",
+      status: "active",
+      colorTag: "border-tertiary"
+    },
+    {
+      id: "crs-3",
+      code: "INT3306",
+      name: "Lập trình Web Fullstack",
+      credits: 4,
+      instructor: "TS. Hoàng Thị Yến",
+      room: "Lab Web 501",
+      day: 4, // Wednesday
+      session: "morning",
+      status: "active",
+      colorTag: "border-primary-fixed"
+    },
+    {
+      id: "crs-4",
+      code: "INT2207",
+      name: "Cơ sở dữ liệu nâng cao & NoSQL",
+      credits: 4,
+      instructor: "PGS.TS. Đỗ Tuấn Anh",
+      room: "Online Google Meet",
+      day: 5, // Thursday
+      session: "morning",
+      status: "active",
+      colorTag: "border-secondary"
+    },
+    {
+      id: "crs-5",
+      code: "INT1006",
+      name: "Kiến trúc máy tính & Hợp ngữ",
+      credits: 3,
+      instructor: "TS. Phạm Thanh Sơn",
+      room: "Giảng đường 101-C",
+      day: 6, // Friday
+      session: "afternoon",
+      status: "active",
+      colorTag: "border-tertiary-fixed-dim"
+    }
+  ];
+
+  const now = new Date();
+  const getRelativeISO = (hoursDelta) => {
+    const d = new Date(now.getTime() + hoursDelta * 3600 * 1000);
+    return d.toISOString();
+  };
+
+  const INITIAL_TASKS = [
+    {
+      id: "tsk-1",
+      title: "Báo cáo Đồ án Hệ điều hành: Xây dựng Bộ nhớ ảo Virtual Memory",
+      courseId: "crs-5",
+      courseName: "Kiến trúc máy tính & Hợp ngữ",
+      priority: "high",
+      status: "todo",
+      deadline: getRelativeISO(6) // 6 hours remaining
+    },
+    {
+      id: "tsk-2",
+      title: "Thực hành Lab 4: Binary Search Tree và Cân bằng AVL Tree",
+      courseId: "crs-1",
+      courseName: "Cấu trúc Dữ liệu & Giải thuật",
+      priority: "high",
+      status: "in_progress",
+      deadline: getRelativeISO(18) // 18 hours remaining
+    },
+    {
+      id: "tsk-3",
+      title: "Cấu hình Wireshark phân tích TCP 3-way handshake & SSL Handshake",
+      courseId: "crs-2",
+      courseName: "Mạng máy tính & Truyền thông",
+      priority: "medium",
+      status: "todo",
+      deadline: getRelativeISO(36)
+    },
+    {
+      id: "tsk-4",
+      title: "Tích hợp JWT Authentication & Refresh Token trong Express REST API",
+      courseId: "crs-3",
+      courseName: "Lập trình Web Fullstack",
+      priority: "medium",
+      status: "in_progress",
+      deadline: getRelativeISO(72)
+    },
+    {
+      id: "tsk-5",
+      title: "Tối ưu hóa B-Tree Indexing trong bảng giao dịch 1 triệu dòng",
+      courseId: "crs-4",
+      courseName: "Cơ sở dữ liệu nâng cao & NoSQL",
+      priority: "low",
+      status: "done",
+      deadline: getRelativeISO(-24)
+    }
+  ];
+
+  const INITIAL_SNIPPETS = [
+    {
+      id: "snp-1",
+      title: "Binary Search Template (C++)",
+      lang: "cpp",
+      desc: "Khuôn mẫu tìm kiếm nhị phân tránh tràn số nguyên (low + (high-low)/2)",
+      code: `int binarySearch(const vector<int>& arr, int target) {
+    int low = 0, high = (int)arr.size() - 1;
+    while (low <= high) {
+        int mid = low + (high - low) / 2;
+        if (arr[mid] == target) return mid;
+        if (arr[mid] < target) low = mid + 1;
+        else high = mid - 1;
+    }
+    return -1; // Not found
+}`
+    },
+    {
+      id: "snp-2",
+      title: "JWT Authentication Middleware (Node.js/Express)",
+      lang: "nodejs",
+      desc: "Xác thực Bearer token từ Request Authorization Header an toàn",
+      code: `const jwt = require('jsonwebtoken');
+
+const authenticateToken = (req, res, next) => {
+    const authHeader = req.headers['authorization'];
+    const token = authHeader && authHeader.split(' ')[1];
+    if (!token) return res.status(401).json({ error: 'Access token missing' });
+
+    jwt.verify(token, process.env.ACCESS_TOKEN_SECRET, (err, user) => {
+        if (err) return res.status(403).json({ error: 'Token invalid or expired' });
+        req.user = user;
+        next();
+    });
+};`
+    },
+    {
+      id: "snp-3",
+      title: "Docker Compose Stack for PostgreSQL & Redis",
+      lang: "docker",
+      desc: "File docker-compose.yml khởi tạo database dev môi trường local nhanh",
+      code: `version: '3.8'
+services:
+  db:
+    image: postgres:15-alpine
+    restart: always
+    environment:
+      POSTGRES_USER: devuser
+      POSTGRES_PASSWORD: devpassword
+      POSTGRES_DB: devstudydb
+    ports:
+      - "5432:5432"
+    volumes:
+      - pgdata:/var/lib/postgresql/data
+
+  cache:
+    image: redis:7-alpine
+    ports:
+      - "6379:6379"
+
+volumes:
+  pgdata:`
+    },
+    {
+      id: "snp-4",
+      title: "SQL Recursive CTE Query (Duyệt cây phòng ban/thư mục)",
+      lang: "sql",
+      desc: "Duyệt cây đệ quy trong SQL Standard tương thích PostgreSQL và MySQL 8+",
+      code: `WITH RECURSIVE CategoryPath AS (
+    SELECT id, name, parent_id, 0 AS level
+    FROM categories
+    WHERE parent_id IS NULL
+    UNION ALL
+    SELECT c.id, c.name, c.parent_id, cp.level + 1
+    FROM categories c
+    INNER JOIN CategoryPath cp ON c.parent_id = cp.id
+)
+SELECT * FROM CategoryPath ORDER BY level, name;`
+    },
+    {
+      id: "snp-5",
+      title: "Centering with CSS Modern Grid & Flexbox",
+      lang: "css",
+      desc: "Bộ class căn giữa nội dung hoàn hảo và responsive column",
+      code: `/* Auto-responsive card grid without media queries */
+.auto-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+    gap: 1.5rem;
+}
+
+/* Perfect dead center */
+.center-box {
+    display: grid;
+    place-items: center;
+    min-height: 100vh;
+}`
+    }
+  ];
+
+  // --- LOCALSTORAGE KEYS ---
+  const STORAGE_KEYS = {
+    COURSES: 'devstudy_courses_v2',
+    TASKS: 'devstudy_tasks_v2',
+    SNIPPETS: 'devstudy_snippets_v2',
+    SCRATCHPAD: 'devstudy_scratchpad_v2'
+  };
+
+  // State
+  let state = {
+    courses: [],
+    tasks: [],
+    snippets: [],
+    scratchpad: "",
+    taskFilter: "all",
+    snippetFilterLang: "all",
+    snippetSearchTerm: ""
+  };
+
+  // --- PERSISTENCE HELPERS ---
+  function loadData() {
+    try {
+      const storedCourses = localStorage.getItem(STORAGE_KEYS.COURSES);
+      state.courses = storedCourses ? JSON.parse(storedCourses) : INITIAL_COURSES;
+
+      const storedTasks = localStorage.getItem(STORAGE_KEYS.TASKS);
+      state.tasks = storedTasks ? JSON.parse(storedTasks) : INITIAL_TASKS;
+
+      const storedSnippets = localStorage.getItem(STORAGE_KEYS.SNIPPETS);
+      state.snippets = storedSnippets ? JSON.parse(storedSnippets) : INITIAL_SNIPPETS;
+
+      const storedScratchpad = localStorage.getItem(STORAGE_KEYS.SCRATCHPAD);
+      state.scratchpad = storedScratchpad !== null ? storedScratchpad : "";
+    } catch (e) {
+      console.warn("Storage reset due to parse error", e);
+      state.courses = INITIAL_COURSES;
+      state.tasks = INITIAL_TASKS;
+      state.snippets = INITIAL_SNIPPETS;
+      state.scratchpad = "";
+    }
+  }
+
+  function saveCourses() {
+    localStorage.setItem(STORAGE_KEYS.COURSES, JSON.stringify(state.courses));
+    renderAll();
+  }
+
+  function saveTasks() {
+    localStorage.setItem(STORAGE_KEYS.TASKS, JSON.stringify(state.tasks));
+    renderAll();
+  }
+
+  function saveSnippets() {
+    localStorage.setItem(STORAGE_KEYS.SNIPPETS, JSON.stringify(state.snippets));
+    renderSnippets();
+  }
+
+  // --- TOAST NOTIFICATIONS ---
+  function showToast(message, type = 'success') {
+    const container = document.getElementById('toast-container');
+    if (!container) return;
+
+    const toast = document.createElement('div');
+    toast.className = `flex items-center gap-2 px-4 py-3 rounded-xl border font-body-sm text-body-sm shadow-xl transition-all duration-300 transform translate-y-4 opacity-0 pointer-events-auto ${
+      type === 'success' 
+        ? 'bg-surface-container-high text-primary border-primary/40' 
+        : type === 'error'
+        ? 'bg-surface-container-high text-error border-error/40'
+        : 'bg-surface-container-high text-tertiary border-tertiary/40'
+    }`;
+
+    const icon = type === 'success' ? 'check_circle' : type === 'error' ? 'cancel' : 'info';
+    toast.innerHTML = `
+      <span class="material-symbols-outlined text-[20px]">${icon}</span>
+      <span class="text-on-surface font-medium">${message}</span>
+    `;
+
+    container.appendChild(toast);
+
+    requestAnimationFrame(() => {
+      toast.classList.remove('translate-y-4', 'opacity-0');
+      toast.classList.add('translate-y-0', 'opacity-100');
+    });
+
+    setTimeout(() => {
+      toast.classList.remove('translate-y-0', 'opacity-100');
+      toast.classList.add('translate-y-4', 'opacity-0');
+      setTimeout(() => toast.remove(), 350);
+    }, 2800);
+  }
+
+  // --- CLOCK & LIVE TIME ---
+  function initClock() {
+    const clockEl = document.getElementById('live-datetime-display');
+    const update = () => {
+      const now = new Date();
+      const days = ['Chủ Nhật', 'Thứ 2', 'Thứ 3', 'Thứ 4', 'Thứ 5', 'Thứ 6', 'Thứ 7'];
+      const dayName = days[now.getDay()];
+      const dateStr = `${String(now.getDate()).padStart(2, '0')}/${String(now.getMonth() + 1).padStart(2, '0')}/${now.getFullYear()}`;
+      const timeStr = `${String(now.getHours()).padStart(2, '0')}:${String(now.getMinutes()).padStart(2, '0')}:${String(now.getSeconds()).padStart(2, '0')}`;
+      if (clockEl) {
+        clockEl.textContent = `${dayName}, ${dateStr} · ${timeStr}`;
+      }
+    };
+    update();
+    setInterval(update, 1000);
+  }
+
+  // --- STATS CALCULATION ---
+  function updateStats() {
+    const totalCourses = state.courses.length;
+    const totalCredits = state.courses.reduce((acc, c) => acc + (parseInt(c.credits) || 0), 0);
+    const completedTasks = state.tasks.filter(t => t.status === 'done').length;
+    const totalTasks = state.tasks.length;
+
+    // Urgent count (todo/in_progress with deadline < 24h)
+    const now = new Date().getTime();
+    const urgentTasks = state.tasks.filter(t => {
+      if (t.status === 'done') return false;
+      const dl = new Date(t.deadline).getTime();
+      return (dl - now) < (24 * 3600 * 1000);
+    });
+
+    // DOM Elements
+    const totalCoursesEl = document.getElementById('stat-total-courses');
+    const totalCreditsEl = document.getElementById('stat-total-credits');
+    const completedTasksEl = document.getElementById('stat-completed-tasks');
+    const progressPercentEl = document.getElementById('stat-progress-percent');
+    const progressBarEl = document.getElementById('stat-progress-bar');
+    const bannerUrgentEl = document.getElementById('banner-urgent-count');
+    const tabTodoBadge = document.getElementById('tab-todo-badge');
+
+    if (totalCoursesEl) totalCoursesEl.textContent = totalCourses;
+    if (totalCreditsEl) totalCreditsEl.textContent = totalCredits;
+    if (completedTasksEl) completedTasksEl.textContent = `${completedTasks} / ${totalTasks}`;
+
+    const percent = totalTasks === 0 ? 0 : Math.round((completedTasks / totalTasks) * 100);
+    if (progressPercentEl) progressPercentEl.textContent = `${percent}%`;
+    if (progressBarEl) progressBarEl.style.width = `${percent}%`;
+    if (bannerUrgentEl) bannerUrgentEl.textContent = `${urgentTasks.length} deadline`;
+    if (tabTodoBadge) tabTodoBadge.textContent = state.tasks.filter(t => t.status !== 'done').length;
+  }
+
+  // --- TAB NAVIGATION ---
+  window.switchTab = function(targetId) {
+    document.querySelectorAll('.tab-pane').forEach(el => el.classList.add('hidden'));
+    const target = document.getElementById(targetId);
+    if (target) {
+      target.classList.remove('hidden');
+    }
+
+    document.querySelectorAll('.nav-tab-btn').forEach(btn => {
+      if (btn.getAttribute('data-target') === targetId) {
+        btn.classList.add('bg-surface-container-high', 'text-primary', 'font-bold', 'shadow-md');
+        btn.classList.remove('text-on-surface-variant');
+      } else {
+        btn.classList.remove('bg-surface-container-high', 'text-primary', 'font-bold', 'shadow-md');
+        btn.classList.add('text-on-surface-variant');
+      }
+    });
+  };
+
+  function initTabButtons() {
+    document.querySelectorAll('.nav-tab-btn').forEach(btn => {
+      btn.addEventListener('click', () => {
+        const target = btn.getAttribute('data-target');
+        if (target) window.switchTab(target);
+      });
+    });
+  }
+
+  // --- RENDER OVERVIEW TAB ---
+  function renderOverview() {
+    const classesContainer = document.getElementById('today-classes-container');
+    const urgentContainer = document.getElementById('urgent-tasks-container');
+
+    // Get current day of week (2 to 8, where 2 is Monday and 8 is Sunday)
+    const todayJsDay = new Date().getDay(); // 0 is Sun, 1 is Mon...
+    const currentDayNum = todayJsDay === 0 ? 8 : todayJsDay + 1;
+
+    // Filter courses for today
+    const todaysCourses = state.courses.filter(c => parseInt(c.day) === currentDayNum);
+
+    if (classesContainer) {
+      if (todaysCourses.length === 0) {
+        classesContainer.innerHTML = `
+          <div class="flex items-center gap-3 p-4 rounded-xl bg-surface-container-lowest/60 border border-surface-container-high text-on-surface-variant">
+            <span class="material-symbols-outlined text-[24px] text-primary">event_available</span>
+            <div class="flex flex-col">
+              <span class="font-headline-md text-headline-md text-on-surface">Hôm nay không có lịch học trên lớp!</span>
+              <span class="font-body-sm text-body-sm">Bạn có thể dành thời gian này làm bài tập lab, ôn luyện LeetCode hoặc phát triển dự án cá nhân.</span>
+            </div>
+          </div>
+        `;
+      } else {
+        classesContainer.innerHTML = todaysCourses.map(c => {
+          const sessionLabel = c.session === 'morning' ? 'Ca Sáng (07:30 - 11:30)' : c.session === 'afternoon' ? 'Ca Chiều (13:00 - 17:00)' : 'Ca Tối (17:30 - 20:45)';
+          return `
+            <div class="flex flex-col sm:flex-row sm:items-center justify-between p-3.5 rounded-xl bg-surface-container/80 border border-surface-container-high hover:border-primary/50 transition-all gap-2">
+              <div class="flex items-center gap-3">
+                <div class="w-10 h-10 rounded-lg bg-primary/10 text-primary flex items-center justify-center shrink-0 font-label-code-md font-bold">
+                  ${c.code.substring(0, 3)}
+                </div>
+                <div class="flex flex-col">
+                  <span class="font-headline-md text-headline-md text-on-surface font-semibold">${c.name}</span>
+                  <div class="flex items-center gap-2 font-label-code-sm text-label-code-sm text-on-surface-variant">
+                    <span>${c.code}</span>
+                    <span>•</span>
+                    <span>${c.instructor || 'Chưa cập nhật GV'}</span>
+                  </div>
+                </div>
+              </div>
+              <div class="flex items-center gap-3 sm:self-center">
+                <span class="px-2.5 py-1 rounded bg-surface-container-high text-tertiary font-label-code-sm text-label-code-sm font-semibold flex items-center gap-1">
+                  <span class="material-symbols-outlined text-[14px]">location_on</span>
+                  ${c.room || 'Phòng học chính'}
+                </span>
+                <span class="font-label-code-sm text-label-code-sm text-on-surface font-medium">${sessionLabel}</span>
+              </div>
+            </div>
+          `;
+        }).join('');
+      }
+    }
+
+    // Render Urgent Tasks in Overview
+    if (urgentContainer) {
+      const nowMs = new Date().getTime();
+      const pendingTasks = state.tasks.filter(t => t.status !== 'done');
+      
+      // Sort by nearest deadline
+      pendingTasks.sort((a, b) => new Date(a.deadline) - new Date(b.deadline));
+
+      const urgentList = pendingTasks.slice(0, 3);
+
+      if (urgentList.length === 0) {
+        urgentContainer.innerHTML = `
+          <div class="flex items-center gap-3 p-4 rounded-xl bg-surface-container-lowest/60 border border-surface-container-high text-on-surface-variant">
+            <span class="material-symbols-outlined text-[24px] text-primary">check_circle</span>
+            <div class="flex flex-col">
+              <span class="font-headline-md text-headline-md text-on-surface">Không có deadline gấp cần giải quyết!</span>
+              <span class="font-body-sm text-body-sm">Tiến độ công việc hiện tại đang được hoàn thành xuất sắc.</span>
+            </div>
+          </div>
+        `;
+      } else {
+        urgentContainer.innerHTML = urgentList.map(task => {
+          const diffHours = Math.round((new Date(task.deadline).getTime() - nowMs) / (3600 * 1000));
+          const timeText = diffHours <= 0 ? 'Quá hạn nộp!' : `Còn ${diffHours} giờ`;
+          const isUrgent = diffHours < 12;
+
+          return `
+            <div class="flex flex-col sm:flex-row sm:items-center justify-between p-3.5 rounded-xl bg-surface-container/80 border border-surface-container-high hover:border-error/40 transition-all gap-2">
+              <div class="flex items-center gap-3 min-w-0">
+                <span class="material-symbols-outlined text-[20px] ${isUrgent ? 'text-error animate-pulse' : 'text-tertiary'} shrink-0">timer</span>
+                <div class="flex flex-col min-w-0">
+                  <span class="font-body-md text-body-md text-on-surface font-semibold truncate">${task.title}</span>
+                  <span class="font-label-code-sm text-label-code-sm text-on-surface-variant">${task.courseName || 'Môn chuyên ngành'}</span>
+                </div>
+              </div>
+              <div class="flex items-center gap-2 shrink-0">
+                <span class="px-2.5 py-1 rounded-full ${isUrgent ? 'bg-error-container text-error' : 'bg-surface-container-high text-tertiary'} font-label-code-sm text-label-code-sm font-bold">
+                  ${timeText}
+                </span>
+                <button onclick="markTaskDone('${task.id}')" title="Đánh dấu hoàn thành" class="p-1.5 rounded-lg bg-primary/10 hover:bg-primary text-primary hover:text-on-primary transition-all">
+                  <span class="material-symbols-outlined text-[16px]">done</span>
+                </button>
+              </div>
+            </div>
+          `;
+        }).join('');
+      }
+    }
+  }
+
+  // --- RENDER COURSES & CREDITS TAB ---
+  function renderCourses() {
+    const grid = document.getElementById('courses-grid');
+    const courseSelectInTaskModal = document.getElementById('task-course-input');
+
+    if (courseSelectInTaskModal) {
+      courseSelectInTaskModal.innerHTML = state.courses.map(c => `
+        <option value="${c.id}">${c.code} - ${c.name}</option>
+      `).join('') + `<option value="other">Khác / Tự học</option>`;
+    }
+
+    if (!grid) return;
+
+    if (state.courses.length === 0) {
+      grid.innerHTML = `
+        <div class="col-span-full p-8 text-center bg-surface-container-low rounded-xl border border-surface-container-high text-on-surface-variant">
+          <p class="font-body-md text-body-md">Chưa có môn học nào được đăng ký trong học kỳ này.</p>
+        </div>
+      `;
+      return;
+    }
+
+    const dayMap = {
+      2: "Thứ Hai",
+      3: "Thứ Ba",
+      4: "Thứ Tư",
+      5: "Thứ Năm",
+      6: "Thứ Sáu",
+      7: "Thứ Bảy",
+      8: "Chủ Nhật"
+    };
+
+    grid.innerHTML = state.courses.map(course => {
+      const dayText = dayMap[course.day] || `Thứ ${course.day}`;
+      const sessionText = course.session === 'morning' ? 'Ca Sáng (07:30 - 11:30)' : course.session === 'afternoon' ? 'Ca Chiều (13:00 - 17:00)' : 'Ca Tối (17:30 - 20:45)';
+
+      return `
+        <div class="flex flex-col justify-between bg-surface-container-low rounded-2xl p-space-md border border-surface-container-high hover:border-primary/40 transition-all duration-200 shadow-sm relative overflow-hidden group">
+          <div class="absolute top-0 left-0 right-0 h-1 bg-gradient-to-r from-primary via-tertiary to-secondary"></div>
+          
+          <div>
+            <div class="flex items-start justify-between gap-2 mb-space-xs">
+              <span class="px-2.5 py-0.5 rounded bg-primary/10 text-primary font-label-code-sm text-label-code-sm font-bold uppercase tracking-wider">
+                ${course.code}
+              </span>
+              <div class="flex items-center gap-1">
+                <span class="px-2 py-0.5 rounded bg-surface-container-high text-secondary-fixed font-label-code-sm text-label-code-sm font-semibold">
+                  ${course.credits} Tín chỉ
+                </span>
+                <button onclick="deleteCourse('${course.id}')" class="p-1 text-outline hover:text-error rounded transition-colors" title="Xóa môn">
+                  <span class="material-symbols-outlined text-[16px]">delete</span>
+                </button>
+              </div>
+            </div>
+
+            <h3 class="font-headline-md text-headline-md text-on-surface font-bold mt-1 line-clamp-1 group-hover:text-primary transition-colors">
+              ${course.name}
+            </h3>
+
+            <div class="flex flex-col gap-1.5 mt-space-sm font-body-sm text-body-sm text-on-surface-variant">
+              <div class="flex items-center gap-2">
+                <span class="material-symbols-outlined text-[16px] text-outline">person</span>
+                <span class="truncate">${course.instructor || 'Chưa cập nhật GV'}</span>
+              </div>
+              <div class="flex items-center gap-2">
+                <span class="material-symbols-outlined text-[16px] text-tertiary">room</span>
+                <span class="truncate">${course.room || 'Phòng học chính'}</span>
+              </div>
+              <div class="flex items-center gap-2">
+                <span class="material-symbols-outlined text-[16px] text-primary">schedule</span>
+                <span>${dayText} · ${sessionText}</span>
+              </div>
+            </div>
+          </div>
+
+          <div class="flex items-center justify-between pt-space-sm mt-space-md border-t border-surface-container-high">
+            <span class="inline-flex items-center gap-1.5 font-label-code-sm text-label-code-sm text-primary">
+              <span class="w-2 h-2 rounded-full bg-primary animate-pulse"></span>
+              Đang trong kỳ học
+            </span>
+            <button onclick="switchTab('tab-tasks')" class="text-tertiary hover:underline font-label-code-sm text-label-code-sm flex items-center gap-0.5">
+              Tasks môn này <span class="material-symbols-outlined text-[12px]">chevron_right</span>
+            </button>
+          </div>
+        </div>
+      `;
+    }).join('');
+  }
+
+  // --- RENDER TIMETABLE GRID TAB ---
+  function renderTimetable() {
+    const tbody = document.getElementById('timetable-body');
+    if (!tbody) return;
+
+    const sessions = [
+      { key: 'morning', label: 'Sáng', sub: '07:30 - 11:30' },
+      { key: 'afternoon', label: 'Chiều', sub: '13:00 - 17:00' },
+      { key: 'evening', label: 'Tối', sub: '17:30 - 20:45' }
+    ];
+
+    const days = [2, 3, 4, 5, 6, 7, 8]; // Mon to Sun
+
+    tbody.innerHTML = sessions.map(session => {
+      let cellsHtml = `<td class="p-3 bg-surface-container-lowest/80 text-center border-r border-surface-container-high font-label-code-sm font-bold text-on-surface">
+        <div>${session.label}</div>
+        <div class="text-[10px] text-outline font-normal">${session.sub}</div>
+      </td>`;
+
+      days.forEach(day => {
+        const matches = state.courses.filter(c => parseInt(c.day) === day && c.session === session.key);
+        if (matches.length > 0) {
+          const course = matches[0];
+          cellsHtml += `
+            <td class="p-2 border border-surface-container-high/60 align-top">
+              <div class="flex flex-col gap-1 p-2.5 rounded-lg bg-surface-container/90 border border-primary/30 hover:border-primary transition-all duration-150">
+                <span class="font-label-code-sm text-label-code-sm text-primary font-bold">${course.code}</span>
+                <span class="font-body-sm text-body-sm text-on-surface font-semibold line-clamp-2 leading-tight">${course.name}</span>
+                <div class="flex items-center gap-1 font-label-code-sm text-[10px] text-outline mt-1">
+                  <span class="material-symbols-outlined text-[12px] text-tertiary">room</span>
+                  <span class="truncate">${course.room}</span>
+                </div>
+              </div>
+            </td>
+          `;
+        } else {
+          cellsHtml += `
+            <td class="p-2 border border-surface-container-high/30 text-center text-outline-variant/40 hover:bg-surface-container/20 transition-colors">
+              <span class="text-xs">-</span>
+            </td>
+          `;
+        }
+      });
+
+      return `<tr class="border-b border-surface-container-high">${cellsHtml}</tr>`;
+    }).join('');
+  }
+
+  // --- RENDER TASK TRACKER TAB ---
+  function renderTasks() {
+    const container = document.getElementById('tasks-container');
+    if (!container) return;
+
+    let filtered = [...state.tasks];
+    if (state.taskFilter !== 'all') {
+      filtered = filtered.filter(t => t.status === state.taskFilter);
+    }
+
+    if (filtered.length === 0) {
+      container.innerHTML = `
+        <div class="p-12 text-center bg-surface-container-low rounded-xl border border-surface-container-high text-on-surface-variant flex flex-col items-center justify-center gap-2">
+          <span class="material-symbols-outlined text-[36px] text-outline">checklist_rtl</span>
+          <p class="font-body-md text-body-md">Không có bài tập nào trong bộ lọc này.</p>
+        </div>
+      `;
+      return;
+    }
+
+    // Sort: Todo & In Progress first, sorted by deadline
+    filtered.sort((a, b) => {
+      if (a.status === 'done' && b.status !== 'done') return 1;
+      if (a.status !== 'done' && b.status === 'done') return -1;
+      return new Date(a.deadline) - new Date(b.deadline);
+    });
+
+    const nowMs = new Date().getTime();
+
+    container.innerHTML = filtered.map(task => {
+      const isDone = task.status === 'done';
+      const dl = new Date(task.deadline);
+      const diffHours = Math.round((dl.getTime() - nowMs) / (3600 * 1000));
+      const formattedDate = `${String(dl.getDate()).padStart(2, '0')}/${String(dl.getMonth() + 1).padStart(2, '0')} ${String(dl.getHours()).padStart(2, '0')}:${String(dl.getMinutes()).padStart(2, '0')}`;
+
+      // Priority Badge
+      let priorityClass = "bg-primary/10 text-primary border-primary/30";
+      let priorityText = "THẤP";
+      if (task.priority === 'high') {
+        priorityClass = "bg-error/15 text-error border-error/40";
+        priorityText = "ƯU TIÊN CAO";
+      } else if (task.priority === 'medium') {
+        priorityClass = "bg-amber-500/15 text-amber-300 border-amber-500/30";
+        priorityText = "TRUNG BÌNH";
+      }
+
+      // Status pill
+      const statusLabel = task.status === 'done' 
+        ? '<span class="text-primary font-label-code-sm text-label-code-sm font-semibold flex items-center gap-1"><span class="w-1.5 h-1.5 rounded-full bg-primary"></span>Hoàn thành</span>'
+        : task.status === 'in_progress'
+        ? '<span class="text-tertiary font-label-code-sm text-label-code-sm font-semibold flex items-center gap-1"><span class="w-1.5 h-1.5 rounded-full bg-tertiary animate-pulse"></span>Đang làm</span>'
+        : '<span class="text-on-surface-variant font-label-code-sm text-label-code-sm font-semibold flex items-center gap-1"><span class="w-1.5 h-1.5 rounded-full bg-outline"></span>Cần làm</span>';
+
+      return `
+        <div class="flex flex-col sm:flex-row sm:items-center justify-between p-space-md rounded-xl bg-surface-container-low border ${isDone ? 'border-surface-container-high opacity-70' : 'border-surface-container-high hover:border-primary/50'} transition-all gap-space-md">
+          <div class="flex items-start gap-3 min-w-0 flex-1">
+            <button onclick="toggleTaskStatus('${task.id}')" class="mt-0.5 w-5 h-5 rounded-md border ${isDone ? 'bg-primary border-primary text-on-primary' : 'border-outline hover:border-primary text-transparent'} flex items-center justify-center transition-all shrink-0">
+              <span class="material-symbols-outlined text-[16px]">${isDone ? 'check' : ''}</span>
+            </button>
+            <div class="flex flex-col min-w-0">
+              <span class="font-body-md text-body-md ${isDone ? 'line-through text-outline' : 'text-on-surface font-medium'} truncate">
+                ${task.title}
+              </span>
+              <div class="flex flex-wrap items-center gap-2 mt-1">
+                <span class="px-2 py-0.5 rounded border ${priorityClass} font-label-code-sm text-label-code-sm font-bold">
+                  ${priorityText}
+                </span>
+                <span class="font-label-code-sm text-label-code-sm text-on-surface-variant">
+                  ${task.courseName || 'Khác'}
+                </span>
+                <span class="text-outline">•</span>
+                <span class="font-label-code-sm text-label-code-sm ${!isDone && diffHours < 12 ? 'text-error font-bold' : 'text-outline'} flex items-center gap-1">
+                  <span class="material-symbols-outlined text-[13px]">alarm</span>
+                  ${formattedDate} (${diffHours > 0 ? `còn ${diffHours}h` : 'hết hạn'})
+                </span>
+              </div>
+            </div>
+          </div>
+
+          <div class="flex items-center justify-between sm:justify-end gap-3 shrink-0 pt-2 sm:pt-0 border-t sm:border-0 border-surface-container-high">
+            ${statusLabel}
+            <div class="flex items-center gap-1">
+              <select onchange="updateTaskStatusDirect('${task.id}', this.value)" class="bg-surface-container-lowest text-on-surface text-xs rounded border border-surface-container-high py-1 px-1.5 focus:outline-none">
+                <option value="todo" ${task.status === 'todo' ? 'selected' : ''}>To Do</option>
+                <option value="in_progress" ${task.status === 'in_progress' ? 'selected' : ''}>In Progress</option>
+                <option value="done" ${task.status === 'done' ? 'selected' : ''}>Done</option>
+              </select>
+              <button onclick="deleteTask('${task.id}')" class="p-1.5 text-outline hover:text-error rounded transition-colors" title="Xóa task">
+                <span class="material-symbols-outlined text-[18px]">delete</span>
+              </button>
+            </div>
+          </div>
+        </div>
+      `;
+    }).join('');
+  }
+
+  // --- RENDER SNIPPETS VAULT TAB ---
+  function renderSnippets() {
+    const grid = document.getElementById('snippets-grid');
+    if (!grid) return;
+
+    let filtered = [...state.snippets];
+
+    // Filter by Language
+    if (state.snippetFilterLang !== 'all') {
+      filtered = filtered.filter(s => s.lang.toLowerCase() === state.snippetFilterLang.toLowerCase());
+    }
+
+    // Filter by Search term
+    if (state.snippetSearchTerm.trim() !== '') {
+      const q = state.snippetSearchTerm.toLowerCase();
+      filtered = filtered.filter(s => 
+        s.title.toLowerCase().includes(q) || 
+        s.desc.toLowerCase().includes(q) ||
+        s.code.toLowerCase().includes(q)
+      );
+    }
+
+    if (filtered.length === 0) {
+      grid.innerHTML = `
+        <div class="col-span-full p-12 text-center bg-surface-container-low rounded-xl border border-surface-container-high text-on-surface-variant flex flex-col items-center justify-center gap-2">
+          <span class="material-symbols-outlined text-[36px] text-outline">code_off</span>
+          <p class="font-body-md text-body-md">Không tìm thấy đoạn mã phù hợp.</p>
+        </div>
+      `;
+      return;
+    }
+
+    grid.innerHTML = filtered.map(snp => {
+      const escapedCode = snp.code
+        .replace(/&/g, "&")
+        .replace(/</g, "<")
+        .replace(/>/g, ">");
+
+      return `
+        <div class="flex flex-col bg-surface-container-low rounded-2xl border border-surface-container-high overflow-hidden shadow-sm hover:border-tertiary/40 transition-all duration-200">
+          <div class="flex items-center justify-between p-space-md border-b border-surface-container-high bg-surface-container-lowest/50">
+            <div class="flex items-center gap-2 min-w-0">
+              <span class="px-2 py-0.5 rounded bg-tertiary/15 text-tertiary font-label-code-sm text-label-code-sm font-bold uppercase">
+                ${snp.lang}
+              </span>
+              <h4 class="font-headline-md text-headline-md text-on-surface font-semibold truncate">${snp.title}</h4>
+            </div>
+            <div class="flex items-center gap-1.5 shrink-0">
+              <button onclick="copySnippetCode('${snp.id}')" id="copy-btn-${snp.id}" class="flex items-center gap-1 px-2.5 py-1 rounded-lg bg-surface-container hover:bg-surface-container-high text-on-surface font-label-code-sm text-label-code-sm transition-all border border-surface-container-high active:scale-95" title="Copy code">
+                <span class="material-symbols-outlined text-[16px] text-tertiary">content_copy</span>
+                <span class="copy-label">Sao chép</span>
+              </button>
+              <button onclick="deleteSnippet('${snp.id}')" class="p-1 text-outline hover:text-error rounded transition-colors" title="Xóa snippet">
+                <span class="material-symbols-outlined text-[18px]">delete</span>
+              </button>
+            </div>
+          </div>
+
+          ${snp.desc ? `<div class="px-space-md pt-space-xs font-body-sm text-body-sm text-on-surface-variant">${snp.desc}</div>` : ''}
+
+          <div class="p-space-md relative group">
+            <pre class="bg-surface-container-lowest p-space-md rounded-xl overflow-x-auto text-on-surface font-label-code-sm text-label-code-sm leading-relaxed border border-surface-container-high/60 selection:bg-tertiary/30"><code>${escapedCode}</code></pre>
+          </div>
+        </div>
+      `;
+    }).join('');
+  }
+
+  // --- GLOBAL COPY SNIPPET ACTION ---
+  window.copySnippetCode = function(id) {
+    const item = state.snippets.find(s => s.id === id);
+    if (!item) return;
+
+    navigator.clipboard.writeText(item.code).then(() => {
+      const btn = document.getElementById(`copy-btn-${id}`);
+      if (btn) {
+        const label = btn.querySelector('.copy-label');
+        if (label) label.textContent = 'Đã chép!';
+        btn.classList.add('text-primary');
+        setTimeout(() => {
+          if (label) label.textContent = 'Sao chép';
+          btn.classList.remove('text-primary');
+        }, 2000);
+      }
+      showToast('Đã sao chép code vào bộ nhớ đệm (Clipboard)!', 'info');
+    });
+  };
+
+  // --- TASK STATE MUTATIONS ---
+  window.toggleTaskStatus = function(id) {
+    state.tasks = state.tasks.map(t => {
+      if (t.id === id) {
+        const next = t.status === 'done' ? 'todo' : 'done';
+        return { ...t, status: next };
+      }
+      return t;
+    });
+    saveTasks();
+    showToast('Cập nhật trạng thái bài tập thành công!');
+  };
+
+  window.markTaskDone = function(id) {
+    state.tasks = state.tasks.map(t => t.id === id ? { ...t, status: 'done' } : t);
+    saveTasks();
+    showToast('Nhiệm vụ đã hoàn thành xuất sắc! 🎉');
+  };
+
+  window.updateTaskStatusDirect = function(id, newStatus) {
+    state.tasks = state.tasks.map(t => t.id === id ? { ...t, status: newStatus } : t);
+    saveTasks();
+    showToast('Đã chuyển trạng thái công việc.');
+  };
+
+  window.deleteTask = function(id) {
+    state.tasks = state.tasks.filter(t => t.id !== id);
+    saveTasks();
+    showToast('Đã xóa nhiệm vụ khỏi danh sách.', 'error');
+  };
+
+  // --- COURSE STATE MUTATIONS ---
+  window.deleteCourse = function(id) {
+    if (confirm('Bạn có chắc muốn xóa môn học này khỏi thời khóa biểu?')) {
+      state.courses = state.courses.filter(c => c.id !== id);
+      saveCourses();
+      showToast('Đã xóa môn học.', 'error');
+    }
+  };
+
+  // --- SNIPPET MUTATIONS ---
+  window.deleteSnippet = function(id) {
+    if (confirm('Xóa đoạn code mẫu này?')) {
+      state.snippets = state.snippets.filter(s => s.id !== id);
+      saveSnippets();
+      showToast('Đã xóa đoạn snippet.', 'error');
+    }
+  };
+
+  // --- MODAL CONTROLS ---
+  window.openModal = function(id) {
+    const el = document.getElementById(id);
+    if (el) {
+      el.classList.remove('hidden');
+      el.classList.add('flex');
+    }
+  };
+
+  window.closeModal = function(id) {
+    const el = document.getElementById(id);
+    if (el) {
+      el.classList.add('hidden');
+      el.classList.remove('flex');
+    }
+  };
+
+  // --- POMODORO TIMER ENGINE ---
+  let pomodoroInterval = null;
+  let pomodoroTimeLeft = 25 * 60; // 25 mins in seconds
+  let pomodoroIsRunning = false;
+  let pomodoroCurrentMode = "focus"; // 'focus' | 'short_break' | 'long_break'
+
+  function updatePomodoroDisplay() {
+    const displayEl = document.getElementById('pomodoro-timer-display');
+    const toggleBtnText = document.getElementById('pomo-toggle-text');
+    const toggleBtnIcon = document.querySelector('#pomo-toggle-btn .material-symbols-outlined');
+
+    const m = Math.floor(pomodoroTimeLeft / 60);
+    const s = pomodoroTimeLeft % 60;
+    const str = `${String(m).padStart(2, '0')}:${String(s).padStart(2, '0')}`;
+
+    if (displayEl) displayEl.textContent = str;
+    if (toggleBtnText) toggleBtnText.textContent = pomodoroIsRunning ? 'Tạm Dừng' : 'Bắt đầu Focus';
+    if (toggleBtnIcon) toggleBtnIcon.textContent = pomodoroIsRunning ? 'pause' : 'play_arrow';
+  }
+
+  function startPomodoro() {
+    if (pomodoroIsRunning) return;
+    pomodoroIsRunning = true;
+    updatePomodoroDisplay();
+
+    pomodoroInterval = setInterval(() => {
+      if (pomodoroTimeLeft > 0) {
+        pomodoroTimeLeft--;
+        updatePomodoroDisplay();
+      } else {
+        clearInterval(pomodoroInterval);
+        pomodoroIsRunning = false;
+        showToast('⏰ Chu kỳ Pomodoro kết thúc! Hãy nghỉ ngơi lấy lại năng lượng!', 'info');
+        updatePomodoroDisplay();
+      }
+    }, 1000);
+  }
+
+  function pausePomodoro() {
+    if (!pomodoroIsRunning) return;
+    clearInterval(pomodoroInterval);
+    pomodoroIsRunning = false;
+    updatePomodoroDisplay();
+  }
+
+  function resetPomodoro(durationSeconds, modeTitle = "TIÊU ĐIỂM (25M)") {
+    pausePomodoro();
+    pomodoroTimeLeft = durationSeconds;
+    const label = document.getElementById('pomodoro-mode-label');
+    if (label) label.textContent = modeTitle;
+    updatePomodoroDisplay();
+  }
+
+  function initPomodoroWidget() {
+    const toggleBtn = document.getElementById('pomo-toggle-btn');
+    const resetBtn = document.getElementById('pomo-reset-btn');
+    const setFocusBtn = document.getElementById('pomo-set-focus');
+    const setShortBreakBtn = document.getElementById('pomo-set-short-break');
+    const setLongBreakBtn = document.getElementById('pomo-set-long-break');
+    const quickPomoBtn = document.getElementById('quick-pomodoro-btn');
+    const openPomoModalBtn = document.getElementById('open-pomodoro-modal-btn');
+
+    if (toggleBtn) {
+      toggleBtn.addEventListener('click', () => {
+        if (pomodoroIsRunning) {
+          pausePomodoro();
+        } else {
+          startPomodoro();
+        }
+      });
+    }
+
+    if (resetBtn) {
+      resetBtn.addEventListener('click', () => {
+        resetPomodoro(25 * 60, "TIÊU ĐIỂM (25M)");
+      });
+    }
+
+    if (setFocusBtn) {
+      setFocusBtn.addEventListener('click', () => {
+        resetPomodoro(25 * 60, "TIÊU ĐIỂM (25M)");
+      });
+    }
+
+    if (setShortBreakBtn) {
+      setShortBreakBtn.addEventListener('click', () => {
+        resetPomodoro(5 * 60, "NGHỈ NGẮN (5M)");
+      });
+    }
+
+    if (setLongBreakBtn) {
+      setLongBreakBtn.addEventListener('click', () => {
+        resetPomodoro(15 * 60, "NGHỈ DÀI (15M)");
+      });
+    }
+
+    if (quickPomoBtn) {
+      quickPomoBtn.addEventListener('click', () => {
+        window.switchTab('tab-overview');
+        startPomodoro();
+        showToast('Đã kích hoạt phiên Sprint 25 phút!');
+      });
+    }
+
+    if (openPomoModalBtn) {
+      openPomoModalBtn.addEventListener('click', () => {
+        window.switchTab('tab-overview');
+      });
+    }
+
+    updatePomodoroDisplay();
+  }
+
+  // --- SCRATCHPAD AUTO-SAVE ---
+  function initScratchpad() {
+    const pad = document.getElementById('quick-scratchpad');
+    const status = document.getElementById('scratchpad-status');
+    if (!pad) return;
+
+    pad.value = state.scratchpad;
+
+    let timeout;
+    pad.addEventListener('input', () => {
+      if (status) status.textContent = 'Đang lưu...';
+      clearTimeout(timeout);
+      timeout = setTimeout(() => {
+        state.scratchpad = pad.value;
+        localStorage.setItem(STORAGE_KEYS.SCRATCHPAD, state.scratchpad);
+        if (status) status.textContent = 'Đã đồng bộ';
+      }, 500);
+    });
+  }
+
+  // --- FORM HANDLERS ---
+  function initForms() {
+    // Add Course
+    const courseForm = document.getElementById('course-form');
+    if (courseForm) {
+      courseForm.addEventListener('submit', (e) => {
+        e.preventDefault();
+        const newCourse = {
+          id: 'crs-' + Date.now(),
+          code: document.getElementById('course-code-input').value.trim().toUpperCase(),
+          credits: parseInt(document.getElementById('course-credits-input').value) || 3,
+          name: document.getElementById('course-name-input').value.trim(),
+          instructor: document.getElementById('course-instructor-input').value.trim(),
+          room: document.getElementById('course-room-input').value.trim(),
+          day: parseInt(document.getElementById('course-day-input').value),
+          session: document.getElementById('course-session-input').value,
+          status: 'active'
+        };
+        state.courses.push(newCourse);
+        saveCourses();
+        closeModal('course-modal');
+        courseForm.reset();
+        showToast(`Đã thêm môn: ${newCourse.name}`);
+      });
+    }
+
+    // Add Task
+    const taskForm = document.getElementById('task-form');
+    if (taskForm) {
+      taskForm.addEventListener('submit', (e) => {
+        e.preventDefault();
+        const courseSelect = document.getElementById('task-course-input');
+        const selectedCourseId = courseSelect.value;
+        const selectedCourseObj = state.courses.find(c => c.id === selectedCourseId);
+
+        const newTask = {
+          id: 'tsk-' + Date.now(),
+          title: document.getElementById('task-title-input').value.trim(),
+          courseId: selectedCourseId,
+          courseName: selectedCourseObj ? selectedCourseObj.name : 'Khác',
+          priority: document.getElementById('task-priority-input').value,
+          status: document.getElementById('task-status-input').value,
+          deadline: new Date(document.getElementById('task-deadline-input').value).toISOString()
+        };
+
+        state.tasks.push(newTask);
+        saveTasks();
+        closeModal('task-modal');
+        taskForm.reset();
+        showToast('Đã thêm bài tập / deadline mới!');
+      });
+    }
+
+    // Add Snippet
+    const snippetForm = document.getElementById('snippet-form');
+    if (snippetForm) {
+      snippetForm.addEventListener('submit', (e) => {
+        e.preventDefault();
+        const newSnippet = {
+          id: 'snp-' + Date.now(),
+          title: document.getElementById('snippet-title-input').value.trim(),
+          lang: document.getElementById('snippet-lang-input').value,
+          desc: document.getElementById('snippet-desc-input').value.trim(),
+          code: document.getElementById('snippet-code-input').value
+        };
+        state.snippets.unshift(newSnippet);
+        saveSnippets();
+        closeModal('snippet-modal');
+        snippetForm.reset();
+        showToast('Đã lưu snippet vào kho code!');
+      });
+    }
+
+    // Modal Trigger Buttons
+    const addCourseBtn = document.getElementById('add-course-btn');
+    if (addCourseBtn) addCourseBtn.addEventListener('click', () => openModal('course-modal'));
+
+    const addTaskModalTrigger = document.getElementById('add-task-modal-trigger');
+    if (addTaskModalTrigger) addTaskModalTrigger.addEventListener('click', () => openModal('task-modal'));
+
+    const quickAddTaskBtn = document.getElementById('quick-add-task-btn');
+    if (quickAddTaskBtn) quickAddTaskBtn.addEventListener('click', () => openModal('task-modal'));
+
+    const addSnippetBtn = document.getElementById('add-snippet-btn');
+    if (addSnippetBtn) addSnippetBtn.addEventListener('click', () => openModal('snippet-modal'));
+
+    // Task Filters
+    document.querySelectorAll('.task-filter-btn').forEach(btn => {
+      btn.addEventListener('click', () => {
+        document.querySelectorAll('.task-filter-btn').forEach(b => {
+          b.classList.remove('active', 'text-primary', 'font-bold', 'bg-surface-container-high');
+          b.classList.add('text-on-surface-variant');
+        });
+        btn.classList.add('active', 'text-primary', 'font-bold', 'bg-surface-container-high');
+        btn.classList.remove('text-on-surface-variant');
+
+        state.taskFilter = btn.getAttribute('data-filter') || 'all';
+        renderTasks();
+      });
+    });
+
+    // Snippet Lang Filters
+    document.querySelectorAll('.snippet-lang-tag').forEach(tag => {
+      tag.addEventListener('click', () => {
+        document.querySelectorAll('.snippet-lang-tag').forEach(t => {
+          t.classList.remove('active', 'bg-surface-container-high', 'text-primary', 'font-bold');
+          t.classList.add('bg-surface-container-low', 'text-on-surface-variant');
+        });
+        tag.classList.add('active', 'bg-surface-container-high', 'text-primary', 'font-bold');
+        tag.classList.remove('bg-surface-container-low', 'text-on-surface-variant');
+
+        state.snippetFilterLang = tag.getAttribute('data-lang') || 'all';
+        renderSnippets();
+      });
+    });
+
+    // Snippet Search Input
+    const snippetSearch = document.getElementById('snippet-search-input');
+    if (snippetSearch) {
+      snippetSearch.addEventListener('input', (e) => {
+        state.snippetSearchTerm = e.target.value;
+        renderSnippets();
+      });
+    }
+
+    // EXPORT JSON
+    const exportBtn = document.getElementById('export-json-btn');
+    if (exportBtn) {
+      exportBtn.addEventListener('click', () => {
+        const payload = {
+          version: '2.4',
+          exportDate: new Date().toISOString(),
+          courses: state.courses,
+          tasks: state.tasks,
+          snippets: state.snippets,
+          scratchpad: state.scratchpad
+        };
+        const blob = new Blob([JSON.stringify(payload, null, 2)], { type: 'application/json' });
+        const url = URL.createObjectURL(blob);
+        const a = document.createElement('a');
+        a.href = url;
+        a.download = `devstudy-backup-${new Date().toISOString().slice(0, 10)}.json`;
+        a.click();
+        URL.revokeObjectURL(url);
+        showToast('Đã xuất dữ liệu Backup thành công!');
+      });
+    }
+
+    // IMPORT JSON
+    const importInput = document.getElementById('import-json-input');
+    if (importInput) {
+      importInput.addEventListener('change', (e) => {
+        const file = e.target.files[0];
+        if (!file) return;
+
+        const reader = new FileReader();
+        reader.onload = (event) => {
+          try {
+            const data = JSON.parse(event.target.result);
+            if (data.courses && Array.isArray(data.courses)) state.courses = data.courses;
+            if (data.tasks && Array.isArray(data.tasks)) state.tasks = data.tasks;
+            if (data.snippets && Array.isArray(data.snippets)) state.snippets = data.snippets;
+            if (typeof data.scratchpad === 'string') state.scratchpad = data.scratchpad;
+
+            localStorage.setItem(STORAGE_KEYS.COURSES, JSON.stringify(state.courses));
+            localStorage.setItem(STORAGE_KEYS.TASKS, JSON.stringify(state.tasks));
+            localStorage.setItem(STORAGE_KEYS.SNIPPETS, JSON.stringify(state.snippets));
+            localStorage.setItem(STORAGE_KEYS.SCRATCHPAD, state.scratchpad);
+
+            initScratchpad();
+            renderAll();
+            showToast('Khôi phục dữ liệu từ file JSON thành công!');
+          } catch (err) {
+            showToast('File JSON không hợp lệ!', 'error');
+          }
+        };
+        reader.readAsText(file);
+      });
+    }
+  }
+
+  // --- RENDER MASTER PIPELINE ---
+  function renderAll() {
+    updateStats();
+    renderOverview();
+    renderCourses();
+    renderTimetable();
+    renderTasks();
+    renderSnippets();
+  }
+
+  // --- BOOTSTRAP ---
+  document.addEventListener('DOMContentLoaded', () => {
+    loadData();
+    initClock();
+    initTabButtons();
+    initForms();
+    initPomodoroWidget();
+    initScratchpad();
+    renderAll();
+  });
+
+  // If already loaded
+  if (document.readyState === 'complete' || document.readyState === 'interactive') {
+    loadData();
+    initClock();
+    initTabButtons();
+    initForms();
+    initPomodoroWidget();
+    initScratchpad();
+    renderAll();
+  }
+})();
+</script></main></div></body></html>
